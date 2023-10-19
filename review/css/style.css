@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    background-color: white;
+}
+
+header{
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    text-shadow: 2px 2px 2px grey;
+    text-align: center;
+    font-size: 35px;
+    padding: 1rem;
+}
+
+h1 {
+    font-family: "Helvetica Neue";
+    font-size: 18px;
+    margin-left: 1rem;
+    text-shadow: 1px 1px 1px grey;
+}
+
+h2 {
+    font-family: "Arial";
+    font-size: 16px;
+    margin: .5rem 1rem;
+}
+
+
+img {
+    display: block;
+    margin: 1rem auto 0;
+    max-width: 100%;
+    width: 45%;
+    border-radius: 8px;
+}
+/* overall container styling */
+.review-container{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    width: 650px;
+    background-color: #FAF9F6;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
+}
+
+/* review and rate containers styling */
+.review-input, .rate-input {
+    display: block;
+    flex: 0 0 30px;
+    background-color: #eee;
+    margin: .5rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 1px 3px rgba(0,0,0,0.23);
+
+}
+
+/* user input field styling */
+.review-inputfield, .rate-inputfield {
+    display: block;
+    flex: 0 0 30px;
+    background-color: white; 
+    margin: 0.5rem;
+    padding: 0.1rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
+}
+
+.album-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* icons styling */
+
+.left, .right {
+    font-size: 50px; 
+    padding: 1.5rem;
+    text-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
+}
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px 30px;
+    font-size: 38px;
+}
+.profile {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    margin: 10px 25px;
+    font-size: 35px;
+}
+.filled {
+    font-size: 35px;
+    color: gold;
+    margin-left: 1rem; 
+}
+.outlined {
+    font-size: 35px;
+    color: gray;
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+button {
+    background-color: white; 
+    color: black; 
+    font-size: 15px; 
+    font-family: "Helvetica Neue";
+    font-style: italic;
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    display: block;
+    margin: 0 auto; 
+    text-align: center; 
+    line-height: 1.5; 
+}

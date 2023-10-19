@@ -3,21 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <span class="menu material-icons">menu</span>
     <header>FOR ALL THE MOODS</header>
+    <span class="profile material-icons">account_circle</span>
     <main>
         <div class="review-container">
+
             <section class="album-image">
-                
+                <span class="left material-icons">chevron_left</span>
+                <img src="img/nothingwasthesame.avif" alt="Nothing Was The Same Album Cover">
+                <span class="right material-icons">chevron_right</span>
             </section>
-            <section class="review-input">
 
-            </section>
-            <section class="rate-input">
+            <div class="review-input">
+                <section class="review">
+                    <h1>WRITE A REVIEW:</h1>
+                    <div class="review-inputfield">
+                        <textarea id="review" name="review" rows="4" cols="75"></textarea>
+                        <button type="button">Submit</button>
+    
+                        <!-- <h2>I love this album! Has to be one of my favorite among all of 
+                            Drakes albums. From his tracks "Take Care" to "Hold On, We're Going Home".
+                        </h2> -->
+                        
+                    </div>
+                </section>
+            </div>
 
-            </section>
+            <div class="rate-input">
+                <section class="rate">
+                    <h1>LEAVE A RATING:</h1>
+                    <span class="star filled material-icons">star</span>
+                    <span class="star filled material-icons">star</span>
+                    <span class="star filled material-icons">star</span>
+                    <span class="star filled material-icons">star</span>
+                    <span class="star outlined material-icons">star</span>
+                </section>
+            </div>
 
         </div>
     </main>
