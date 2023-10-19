@@ -19,13 +19,6 @@ h1 {
     text-shadow: 1px 1px 1px grey;
 }
 
-h2 {
-    font-family: "Arial";
-    font-size: 16px;
-    margin: .5rem 1rem;
-}
-
-
 img {
     display: block;
     margin: 1rem auto 0;
@@ -119,4 +112,57 @@ button {
     margin: 0 auto; 
     text-align: center; 
     line-height: 1.5; 
+}
+
+/* sign-in html */
+.signin-container {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    width: 650px;
+    background-color: #FAF9F6;
+    margin: 5rem auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
+}
+
+.subscribe {
+    font-size: 20px;
+    text-align: center; 
+    padding-top: 1rem;
+    line-height: 1.5;
+    letter-spacing: .25em;
+}
+
+.notice {
+    font-family: "Helvetica Neue";
+    font-weight: 300;
+    text-align: center;
+    font-size: 12px;
+    margin: 0 8rem;
+    padding-bottom: .5rem;
+}
+
+form {
+    max-width: 300px; 
+    margin: 0 10rem; 
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+    text-align: left; 
+}
+
+form label {
+    font-family: "Helvetica Neue";
+    font-weight: 400;
+    display: block; 
+    text-align: left; 
+    margin-bottom: 5px; 
+    margin-top: 5px;
+}
+
+form input {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px;
 }
