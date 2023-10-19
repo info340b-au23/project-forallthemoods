@@ -1,3 +1,4 @@
+/* overall website styling theme */
 body{
     margin: 0;
     background-color: white;
@@ -12,20 +13,45 @@ header{
     padding: 1rem;
 }
 
-h1 {
-    font-family: "Helvetica Neue";
-    font-size: 18px;
-    margin-left: 1rem;
-    text-shadow: 1px 1px 1px grey;
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px 30px;
+    font-size: 38px;
 }
 
-img {
+.profile {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    margin: 10px 25px;
+    font-size: 35px;
+}
+
+/* album image */
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.drake-album {
     display: block;
     margin: 1rem auto 0;
     max-width: 100%;
     width: 45%;
     border-radius: 8px;
 }
+
+.img-caption {
+    font-family: "Helvetica Neue";
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    font-size: 14px;
+}
+
 /* overall container styling */
 .review-container{
     display: flex;
@@ -39,7 +65,7 @@ img {
     box-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
 }
 
-/* review and rate containers styling */
+/* review and rate inner containers styling */
 .review-input, .rate-input {
     display: block;
     flex: 0 0 30px;
@@ -49,6 +75,14 @@ img {
     border-radius: 10px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 1px 3px rgba(0,0,0,0.23);
 
+}
+
+h1 {
+    font-family: "Helvetica Neue";
+    font-size: 18px;
+    margin-left: 1rem;
+    text-shadow: 1px 1px 1px grey;
+    letter-spacing: .10em;
 }
 
 /* user input field styling */
@@ -72,38 +106,27 @@ img {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
 }
 
-.album-image {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.review-inputfield textarea {
+    resize: none; 
+    outline: none;
+    border: 1px solid white;
+    border-radius: 10px;
 }
 
-/* icons styling */
 
+/* icons styling */
 .left, .right {
     font-size: 50px; 
     padding: 1.5rem;
     text-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
 }
-.menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 20px 30px;
-    font-size: 38px;
-}
-.profile {
-    position: absolute;
-    top: 10px; 
-    right: 10px; 
-    margin: 10px 25px;
-    font-size: 35px;
-}
+
 .filled {
     font-size: 35px;
     color: gold;
     margin-left: 1rem; 
 }
+
 .outlined {
     font-size: 35px;
     color: gray;
@@ -126,7 +149,9 @@ img {
 }
 
 
-/* sign-in html */
+/* sign-in.html styling */
+
+/* overall sign-in container */
 .signin-container {
     display: flex;
     box-sizing: border-box;
@@ -139,6 +164,7 @@ img {
     box-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
 }
 
+/* sign-in header */
 .subscribe {
     font-size: 20px;
     text-align: center; 
@@ -147,6 +173,7 @@ img {
     letter-spacing: .25em;
 }
 
+/* notice text under header */
 .notice {
     font-family: "Helvetica Neue";
     font-weight: 300;
@@ -156,6 +183,7 @@ img {
     padding-bottom: .5rem;
 }
 
+/* text-form for sign-up */
 form {
     max-width: 300px; 
     margin: 0 10rem; 
