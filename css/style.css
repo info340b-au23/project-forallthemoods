@@ -394,7 +394,7 @@ p {
 }
 
 .selector-container {
-    display: flex;
+    display: inline-block;
     justify-content: center;
     width: 650px;
     background-color: #FAF9F6;
