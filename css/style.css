@@ -380,7 +380,6 @@ form input {
 }
 
 
-
 /* tika's page */
 
 /* Default Styling */
@@ -424,10 +423,6 @@ select {
     content: "e2ea";
 }
 
-.heartbreak-icon::before {
-    content: "eac2";
-}
-
 .club-icon::before {
     content: "ea62";
 }
@@ -455,8 +450,13 @@ combination-icon::before {
     border-radius: 16px;
     outline: none;
     position: relative;
-    left: 250px;
-    top: 70px;
+    left: 180px;
+    top: 40px;
+}
+
+.heart-button:hover {
+    background-color: #000;
+    color: #FFF;
 }
 
 .sad-background {
