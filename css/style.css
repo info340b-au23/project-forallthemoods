@@ -28,8 +28,9 @@ header{
 footer {
     text-align: center;
     font-size: 20px;
-    margin-top: auto;
+    /* margin-top: auto; */
     padding: 10px;
+    align-self: flex-end;
 }
 
 .menu {
@@ -356,7 +357,7 @@ form input {
     }
     
     
-    .flex-container-quiz {
+.flex-container-quiz {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -366,50 +367,50 @@ form input {
     text-shadow: 0.5px 0.5px grey;
     font-size: 18px;
     margin-left: 1rem;
-    }
+}
     
     
-    .flex-container-quiz>div {
+.flex-container-quiz>div {
     flex: 0 0 175px;
     background-color: white;
     padding: .5rem .5rem .5rem .5rem;
     margin: 1.8rem;
     border-radius: 10px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
-    }
+}
     
     
-    #check {
+#check {
     position: absolute;
     display: flex;
     align-items: flex-start;
-    }
+}
     
     
-    #check:hover {
+#check:hover {
     box-shadow: 0 0 5px black;
     cursor: pointer;
-    }
+}
     
     
-    .quiz-title, .question-number {
+.quiz-title, .question-number {
     font-family: "Helvetica Neue";
     font-size: 18px;
     margin-left: 1rem;
     text-shadow: 1px 1px 1px grey;
     letter-spacing: .10em;
     text-align: center;
-    }
+}
     
     
-    .quiz-caption {
+.quiz-caption {
     font-family: "Helvetica Neue";
     font-weight: bold;
     font-style: italic;
     text-align: center;
     font-size: 14px;
     margin-top: 2rem;
-    }
+}
     
 
 /* tika's page */
@@ -437,13 +438,34 @@ p {
     box-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
 }
 
+.select-title {
+    font-size: 20px;
+    text-align: center; 
+    padding-top: 1rem;
+    line-height: 1.5;
+    letter-spacing: .25em;
+}
+
+.select-notice {
+    font-family: "Helvetica Neue";
+    font-weight: 300;
+    text-align: center;
+    font-size: 15px;
+    margin: 0 8rem;
+    padding-bottom: .5rem;
+}
+
 .selector {
-    display: inline-block;
-    margin-top: 20px;
+    max-width: 300px; 
+    margin: 0 10rem; 
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+    text-align: center; 
 }
 
 .selecter-options{
     display: block;
+    justify-content: center;
     margin: 10px 0;
 }
 
@@ -451,38 +473,7 @@ select {
     padding: 5px;
 }
 
-/* Icon Styles */
-.mood-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-    display: inline-block;
-}
 
-/* Defining a class for each mood icon */
-.party-icon {
-    background-position: 0 0;
-}
-
-nostalgic-icon {
-    background-position: 0 -30px;
-}
-
-heartbreak-icon {
-    background-position: 0 -60px;
-}
-
-club-icon {
-    background-position: 0 -90px;
-}
-
-hyped-icon {
-    background-position: 0 -120px;
-}
-
-combination-icon {
-    background-position: 0 -150px;
-}
 
 .heart-button {
     font-family: "Helvetica Neue";
