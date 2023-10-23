@@ -393,6 +393,16 @@ p {
     color: black;
 }
 
+.selector-container {
+    display: flex;
+    justify-content: center;
+    width: 650px;
+    background-color: #FAF9F6;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
+}
+
 .selector {
     display: inline-block;
     margin-top: 20px;
