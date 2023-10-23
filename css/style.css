@@ -426,24 +426,28 @@ select {
 }
 
 /* Defining a class for each mood icon */
-.party-icon::before {
-    content: "ea65";
+.party-icon {
+    background-position: 0 0;
 }
 
-.nostalgic-icon::before {
-    content: "e2ea";
+nostalgic-icon {
+    background-position: 0 -30px;
 }
 
-.club-icon::before {
-    content: "ea62";
+heartbreak-icon {
+    background-position: 0 -60px;
 }
 
-hyped-icon::before {
-    content: "f6a8";
+club-icon {
+    background-position: 0 -90px;
 }
 
-combination-icon::before {
-    content: "e64c";
+hyped-icon {
+    background-position: 0 -120px;
+}
+
+combination-icon {
+    background-position: 0 -150px;
 }
 
 .heart-button {
