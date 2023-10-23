@@ -227,3 +227,12 @@ form input {
     line-height: 1.5; 
     width: 108%;
 }
+
+
+.flex-container {
+    text-align: left;
+}
+
+.flex-container2 {
+    text-align: right;
+}
