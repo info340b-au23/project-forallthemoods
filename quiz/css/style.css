@@ -100,7 +100,7 @@ footer {
   }
   
   
-  .flex-container-quiz>div {
+.flex-container-quiz>div {
     flex: 0 0 200px;
     background-color: white;
     padding: 0rem 0rem 0rem 0rem;
