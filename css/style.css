@@ -256,7 +256,7 @@ form input {
 .mood-button {
     font-family: "Helvetica Neue";
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     background-color: #FAF9F6;
     border: 3.5px solid black;
     color: black;
@@ -267,9 +267,9 @@ form input {
     cursor: pointer;
     border-radius: 16px;
     outline: none;
-    position: relative;
-    left: 180px;
-    top: 40px;
+    position: absolute;
+    left: 220px;
+    top: 130px;
 }
 
 .merch-button:hover {
@@ -280,7 +280,7 @@ form input {
 .merch-button {
     font-family: "Helvetica Neue";
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     background-color: #FAF9F6;
     border: 3.5px solid black;
     color: black;
@@ -291,9 +291,9 @@ form input {
     cursor: pointer;
     border-radius: 16px;
     outline: none;
-    position: relative;
-    left: 50px;
-    top: 400px;
+    position: absolute;
+    left: 250px;
+    top: 580px;
 }
 
 .quiz-button:hover {
@@ -304,7 +304,7 @@ form input {
 .quiz-button {
     font-family: "Helvetica Neue";
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     background-color: #FAF9F6;
     border: 3.5px solid black;
     color: black;
@@ -315,9 +315,9 @@ form input {
     cursor: pointer;
     border-radius: 16px;
     outline: none;
-    position: relative;
-    left: 780px;
-    top: 430px;
+    position: absolute;
+    left: 1200px;
+    top: 590px;
 }
 
 
@@ -329,7 +329,7 @@ form input {
 .review-button {
     font-family: "Helvetica Neue";
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     background-color: #FAF9F6;
     border: 3.5px solid black;
     color: black;
@@ -340,9 +340,9 @@ form input {
     cursor: pointer;
     border-radius: 16px;
     outline: none;
-    position: relative;
-    left: 290px;
-    top: 230px;
+    position: absolute;
+    left: 680px;
+    top: 400px;
 }
 
 /* jaydens quiz page */
@@ -474,6 +474,7 @@ select {
 }
 
 
+/* FOR EACH MOOD BUTTON */
 
 .heart-button {
     font-family: "Helvetica Neue";
@@ -489,9 +490,9 @@ select {
     cursor: pointer;
     border-radius: 16px;
     outline: none;
-    position: relative;
-    left: 180px;
-    top: 40px;
+    position: absolute;
+    left: 220px;
+    top: 130px;
 }
 
 .heart-button:hover {
