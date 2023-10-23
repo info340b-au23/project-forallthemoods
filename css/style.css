@@ -19,6 +19,7 @@ header{
     text-align: center;
     font-size: 35px;
     padding: 1rem;
+    padding-bottom: .5rem;
     text-decoration: none;
 }
 
@@ -55,6 +56,37 @@ h1 {
     margin-left: 1rem;
     text-shadow: 1px 1px 1px grey;
     letter-spacing: .10em;
+}
+
+/* navigation bar */
+
+.nav-container {
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav-container ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container li {
+    display: inline-block;
+    margin-right: 10px;
+    padding-bottom: .5rem;
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    text-shadow: 2px 2px 2px grey;
+    font-family: "Helvetica Neue";
+    letter-spacing: .1em;
+    padding: .5rem .2rem;
 }
 
 /* overall container styling for review/rate, sign-in, and mood pages */
@@ -455,22 +487,4 @@ p {
        .header {
         	font-size: 32px;
     	}
-}
-
-.nav-container {
-    backdrop-filter: blur(10px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.nav-container ul {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-container li {
-    display: inline-block;
-    margin-right: 10px;
 }
