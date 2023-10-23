@@ -1,6 +1,14 @@
 /* overall website styling theme */
+/* html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+} */
+
 body{
     margin: 0;
+    padding: 0;
+    height: 100%;
     background-color: white;
     background-image: url("../img/bg_default.jpg");
     background-size: cover;
@@ -18,9 +26,10 @@ header{
 }
 
 footer {
-    margin-top: auto;
     text-align: center;
     font-size: 20px;
+    margin-top: auto;
+    padding: 10px;
 }
 
 .menu {
@@ -440,6 +449,39 @@ p {
 
 select {
     padding: 5px;
+}
+
+/* Icon Styles */
+.mood-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+/* Defining a class for each mood icon */
+.party-icon {
+    background-position: 0 0;
+}
+
+nostalgic-icon {
+    background-position: 0 -30px;
+}
+
+heartbreak-icon {
+    background-position: 0 -60px;
+}
+
+club-icon {
+    background-position: 0 -90px;
+}
+
+hyped-icon {
+    background-position: 0 -120px;
+}
+
+combination-icon {
+    background-position: 0 -150px;
 }
 
 .heart-button {
