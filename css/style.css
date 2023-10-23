@@ -344,42 +344,64 @@ form input {
     max-width: 100%;
     width: 45%;
     border-radius: 8px;
-
-}
-
-.flex-container-quiz {
+    }
+    
+    
+    .flex-container-quiz {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0.5rem;
     text-align: center;
-  }
-  
-  
-.flex-container-quiz>div {
-    flex: 0 0 200px;
+    font-family: "Helvetica Neue";
+    text-shadow: 0.5px 0.5px grey;
+    font-size: 18px;
+    margin-left: 1rem;
+    }
+    
+    
+    .flex-container-quiz>div {
+    flex: 0 0 175px;
     background-color: white;
-    padding: 0rem 0rem 0rem 0rem;
-    margin: 1rem;
+    padding: .5rem .5rem .5rem .5rem;
+    margin: 1.8rem;
     border-radius: 10px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
-  }
-
-#check {
-    text-align: left;
-}
-
-
-/* h1 and title */
-.quiz-title, .question-number {
+    }
+    
+    
+    #check {
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    }
+    
+    
+    #check:hover {
+    box-shadow: 0 0 5px black;
+    cursor: pointer;
+    }
+    
+    
+    .quiz-title, .question-number {
     font-family: "Helvetica Neue";
     font-size: 18px;
     margin-left: 1rem;
     text-shadow: 1px 1px 1px grey;
     letter-spacing: .10em;
     text-align: center;
-}
-
+    }
+    
+    
+    .quiz-caption {
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 2rem;
+    }
+    
 
 /* tika's page */
 
