@@ -454,3 +454,21 @@ p {
         	font-size: 32px;
     	}
 }
+
+.nav-container {
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav-container ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container li {
+    display: inline-block;
+    margin-right: 10px;
+}
