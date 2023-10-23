@@ -7,6 +7,9 @@ body{
     background-color: white;
     background-image: url("../img/bg_default.jpg");
     background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header{
