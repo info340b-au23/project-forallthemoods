@@ -441,39 +441,6 @@ select {
     padding: 5px;
 }
 
-/* Icon Styles */
-.mood-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-    display: inline-block;
-}
-
-/* Defining a class for each mood icon */
-.party-icon {
-    background-position: 0 0;
-}
-
-nostalgic-icon {
-    background-position: 0 -30px;
-}
-
-heartbreak-icon {
-    background-position: 0 -60px;
-}
-
-club-icon {
-    background-position: 0 -90px;
-}
-
-hyped-icon {
-    background-position: 0 -120px;
-}
-
-combination-icon {
-    background-position: 0 -150px;
-}
-
 .heart-button {
     font-family: "Helvetica Neue";
     font-weight: bold;
