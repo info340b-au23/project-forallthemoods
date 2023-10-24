@@ -458,15 +458,30 @@ p {
 /* Small screens (mobile) */
 
 @media screen and (max-width: 767px) {
+    /* overall page adjustment */
 	body {
         	font-size: 16px;
-            background-attachment: scroll;
-            background-repeat: no-repeat;
+            background-image: url("../img/bg_default_mobile.jpg");
 	}
 
-    .header {
-        font-size: 24px; 
-        text-align: center;
+    .menu {
+        color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 20px 15px;
+        font-size: 38px;
+        text-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
+    } 
+    
+    .profile {
+        color: white;
+        position: absolute;
+        top: 12px; 
+        right: 10px; 
+        margin: 8px 10px;
+        font-size: 35px;
+        text-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
     }
 
     /* overall container adjustments */
@@ -480,6 +495,89 @@ p {
         margin: 2rem auto;
         border-radius: 10px;
         box-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
+    }
+
+    /* home and mood page button adjustments */
+    .mood-button, .heart-button {
+        font-family: "Helvetica Neue";
+        font-weight: bold;
+        font-size: 8px;
+        background-color: #FAF9F6;
+        border: 2.5px solid black;
+        color: black;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 16px;
+        outline: none;
+        position: absolute;
+        left: 45px;
+        top: 260px;
+    }
+
+    .merch-button {
+        font-family: "Helvetica Neue";
+        font-weight: bold;
+        font-size: 8px;
+        background-color: #FAF9F6;
+        border: 2.5px solid black;
+        color: black;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 16px;
+        outline: none;
+        position: absolute;
+        left: 43px;
+        top: 370px;
+    }
+
+    .quiz-button {
+        font-family: "Helvetica Neue";
+        font-weight: bold;
+        font-size: 8px;
+        background-color: #FAF9F6;
+        border: 2.5px solid black;
+        color: black;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 16px;
+        outline: none;
+        position: absolute;
+        left: 305px;
+        top: 385px;
+    }
+
+    .review-button {
+        font-family: "Helvetica Neue";
+        font-weight: bold;
+        font-size: 8px;
+        background-color: #FAF9F6;
+        border: 2.5px solid black;
+        color: black;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 16px;
+        outline: none;
+        position: absolute;
+        left: 170px;
+        top: 326px;
+    }
+
+    /* mood background example change for eg_mood page */
+    .sad-background {
+        background-image: url("../img/bg_sad_mobile.jpg");
+        background-size: cover;
     }
 
     /* sign-up page adjustments */
@@ -535,69 +633,65 @@ p {
         letter-spacing: .25em;
     }
 
-/* review and rate page inner containers adjustments */
+    /* review and rate page inner containers adjustments */
+    .review-input, .rate-input {
+        display: block;
+        flex: 0 0 30px;
+        background-color: #eee;
+        margin: .5rem;
+        padding-bottom: .5rem;
+        border-radius: 10px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 1px 3px rgba(0,0,0,0.23);
 
-.review-input, .rate-input {
-    display: block;
-    flex: 0 0 30px;
-    background-color: #eee;
-    margin: .5rem;
-    padding-bottom: .5rem;
-    border-radius: 10px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 1px 3px rgba(0,0,0,0.23);
+    }
 
-}
+    /* mood page option selector adjustments */
+    .selector {
+        max-width: 100%; 
+        margin: 0; 
+        padding-top: .5rem;
+        padding-bottom: 1rem;
+        text-align: center; 
+    }
 
-/* mood page option selector adjustments */
+    /* user input field for review adjustments */
+    .review-inputfield textarea {
+        resize: none; 
+        outline: none;
+        border: 1px solid white;
+        border-radius: 10px;
+        width: 100%;
+    }
 
-.selector {
-    max-width: 100%; 
-    margin: 0; 
-    padding-top: .5rem;
-    padding-bottom: 1rem;
-    text-align: center; 
-}
-
-/* user input field for review adjustments */
-
-.review-inputfield textarea {
-    resize: none; 
-    outline: none;
-    border: 1px solid white;
-    border-radius: 10px;
-    width: 100%;
-}
-
-/* quiz page mobile adjusments */
-
-.drake-album2 {
-    display: block;
-    margin-left: auto;
-    margin-right: .1rem;
-    max-width: 100%;
-    width: 45%;
-    border-radius: 8px;
-}
-  
-.flex-container-quiz>div {
-    font-size: 14px;
-    flex: 0 0 175px;
-    background-color: white;
-    padding: .5rem .5rem .5rem .5rem;
-    margin: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
-}
- 
-.quiz-title, .question-number {
-    font-family: "Helvetica Neue";
-    font-size: 15px;
-    margin: .5rem;
-    padding-top: .5rem;
-    text-shadow: 1px 1px 1px grey;
-    letter-spacing: .10em;
-    text-align: center;
-}
+    /* quiz page mobile adjusments */
+    .drake-album2 {
+        display: block;
+        margin-left: auto;
+        margin-right: .1rem;
+        max-width: 100%;
+        width: 45%;
+        border-radius: 8px;
+    }
+    
+    .flex-container-quiz>div {
+        font-size: 14px;
+        flex: 0 0 175px;
+        background-color: white;
+        padding: .5rem .5rem .5rem .5rem;
+        margin: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
+    }
+    
+    .quiz-title, .question-number {
+        font-family: "Helvetica Neue";
+        font-size: 15px;
+        margin: .5rem;
+        padding-top: .5rem;
+        text-shadow: 1px 1px 1px grey;
+        letter-spacing: .10em;
+        text-align: center;
+    }
 
 }
 
