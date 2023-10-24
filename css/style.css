@@ -581,7 +581,7 @@ p {
         top: 326px;
     }
 
-    /* mood background example change for eg_mood page */
+    /* mood background mobile example change for eg_mood page */
     .sad-background {
         background-image: url("../img/bg_sad_mobile.jpg");
         background-size: cover;
@@ -707,7 +707,6 @@ p {
 	body {
         	font-size: 18px;
 	}
-
 	.header {
         	font-size: 28px;
     	}
