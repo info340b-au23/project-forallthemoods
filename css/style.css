@@ -484,6 +484,13 @@ p {
         text-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
     }
 
+    footer {
+        text-align: center;
+        font-size: 16px;
+        margin-top: auto;
+        padding: 10px;
+    }
+
     /* overall container adjustments */
     .review-container, .signin-container, .selector-container{
         display: flex;
