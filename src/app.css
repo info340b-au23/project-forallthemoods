@@ -1,0 +1,725 @@
+/* overall website styling theme */
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: white;
+    background-image: url("../public/img/bg_default.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: none; 
+}
+
+header{
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    text-shadow: 2px 2px 2px grey;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    padding: 1rem;
+    padding-bottom: .5rem;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    font-size: 20px;
+    margin-top: auto;
+    padding: 10px;
+}
+
+.menu {
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px 30px;
+    font-size: 38px;
+    text-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
+}
+
+.profile {
+    color: white;
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    margin: 10px 25px;
+    font-size: 35px;
+    text-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
+}
+
+h1 {
+    font-family: "Helvetica Neue";
+    font-size: 18px;
+    margin-left: 1rem;
+    text-shadow: 1px 1px 1px grey;
+    letter-spacing: .10em;
+}
+
+/* navigation bar */
+
+.nav-container {
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav-container ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container li {
+    display: inline-block;
+    margin-right: 10px;
+    padding-bottom: .5rem;
+    backdrop-filter: none;
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    text-shadow: 2px 2px 2px grey;
+    font-family: "Helvetica Neue";
+    letter-spacing: .1em;
+    padding: .5rem .2rem;
+}
+
+/* overall container styling for review/rate, sign-in, and mood pages */
+
+.review-container, .signin-container, .selector-container{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    width: 650px;
+    background-color: #FAF9F6;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
+}
+
+/* review and rate page inner containers styling */
+
+.review-input, .rate-input {
+    display: block;
+    flex: 0 0 30px;
+    background-color: #eee;
+    margin: .5rem;
+    padding-bottom: .5rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 1px 3px rgba(0,0,0,0.23);
+
+}
+
+/* user input field for review and rate page styling */
+
+.rate-inputfield {
+    display: block;
+    flex: 0 0 30px;
+    background-color: white; 
+    margin: 0.5rem;
+    padding: 0.1rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
+}
+
+.review-inputfield{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eee;
+    margin: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
+}
+
+.review-inputfield textarea {
+    resize: none; 
+    outline: none;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+/* text-form for sign-up */
+
+.sign-up {
+    max-width: 300px; 
+    margin: 0 10rem; 
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+    text-align: left; 
+}
+
+.signup-labels {
+    font-family: "Helvetica Neue";
+    font-weight: 400;
+    display: block; 
+    text-align: left; 
+    margin-bottom: 5px; 
+    margin-top: 5px;
+}
+
+form input {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px;
+}
+
+.submit {
+    background-color: rgb(113, 201, 255); 
+    color: black; 
+    font-size: 15px; 
+    font-family: "Helvetica Neue";
+    font-style: italic;
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    margin: .5rem auto; 
+    text-align: center; 
+    line-height: 1.5; 
+    width: 108%;
+}
+
+/* mood page option selector */
+
+.selector {
+    max-width: 300px; 
+    margin: 0 10rem; 
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+    text-align: center; 
+}
+
+.selecter-options{
+    font-family: "Helvetica Neue";
+    letter-spacing: .1em;
+    display: block;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+select {
+    padding: 5px;
+}
+
+/* sign-in and mood page headers */
+
+.subscribe, .select-title {
+    font-size: 20px;
+    text-align: center; 
+    padding-top: 1rem;
+    line-height: 1.5;
+    letter-spacing: .25em;
+}
+
+/* sign-in and mood page notice */
+
+.notice, .select-notice {
+    font-family: "Helvetica Neue";
+    font-weight: 300;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: .1em;
+    margin: 0 8rem;
+    padding-bottom: .5rem;
+}
+
+/* imaging styling for review/rate and quiz page */
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.drake-album {
+    display: block;
+    margin: 1rem auto 0;
+    max-width: 100%;
+    width: 45%;
+    border-radius: 8px;
+}
+
+.drake-album2 {
+    display: block;
+    margin-left: auto;
+    margin-right: 5rem;
+    max-width: 100%;
+    width: 45%;
+    border-radius: 8px;
+}
+
+.img-caption {
+    font-family: "Helvetica Neue";
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    font-size: 14px;
+    margin-top: .5rem;
+}
+
+.quiz-caption {
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 1rem;
+}
+
+/* review and rate page icons styling*/
+
+.left, .right {
+    font-size: 50px; 
+    padding: 1.5rem;
+    text-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
+}
+
+.filled {
+    font-size: 35px;
+    color: gold;
+    margin-left: 1rem; 
+}
+
+.outlined {
+    font-size: 35px;
+    color: gray;
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.submit-review {
+    display: block;
+    background-color: rgb(211, 208, 208); 
+    color: black; 
+    font-size: 15px; 
+    font-family: "Helvetica Neue";
+    font-style: italic;
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    margin: 0 auto; 
+    text-align: center;
+    line-height: 1.5; 
+}
+
+/* home and mood page button styling */
+
+.mood-button, .heart-button {
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #FAF9F6;
+    border: 3.5px solid black;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 16px;
+    outline: none;
+    position: absolute;
+    left: 220px;
+    top: 130px;
+}
+
+.merch-button {
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #FAF9F6;
+    border: 3.5px solid black;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 16px;
+    outline: none;
+    position: absolute;
+    left: 250px;
+    top: 580px;
+}
+
+.quiz-button {
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #FAF9F6;
+    border: 3.5px solid black;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 16px;
+    outline: none;
+    position: absolute;
+    left: 1200px;
+    top: 590px;
+}
+
+.review-button {
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #FAF9F6;
+    border: 3.5px solid black;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 16px;
+    outline: none;
+    position: absolute;
+    left: 680px;
+    top: 400px;
+}
+
+.quiz-button:hover, .review-button:hover, .merch-button:hover, .mood-button:hover, .heart-button:hover{
+    background-color: #000;
+    color: #FFF;
+}
+
+/* jaydens quiz page container individual styling */
+  
+.flex-container-quiz {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: "Helvetica Neue";
+    text-shadow: 0.5px 0.5px grey;
+    font-size: 18px;
+    margin-left: 1rem;
+}
+  
+.flex-container-quiz>div {
+    flex: 0 0 175px;
+    background-color: white;
+    padding: .5rem .5rem .5rem .5rem;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
+}
+    
+#check {
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+}
+    
+#check:hover {
+    box-shadow: 0 0 5px black;
+    cursor: pointer;
+}
+ 
+.quiz-title, .question-number {
+    font-family: "Helvetica Neue";
+    font-size: 18px;
+    margin-left: 1rem;
+    padding-top: 1rem;
+    text-shadow: 1px 1px 1px grey;
+    letter-spacing: .10em;
+    text-align: center;
+}
+    
+
+/* tika's mood and mood example page individual styling */
+
+/* Default Styling */
+body, p, form, select{
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: black;
+}
+
+/* mood background example change for eg_mood page */
+
+.sad-background {
+	background-image: url("../public/img/bg-sad.jpg");
+	background-size: cover;
+}
+
+
+/* media queries */
+/* Small screens (mobile) */
+
+@media screen and (max-width: 767px) {
+    /* overall page adjustment */
+	body {
+        	font-size: 16px;
+            background-image: url("../public/img/bg_default_mobile.jpg");
+	}
+
+    .menu {
+        color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 20px 15px;
+        font-size: 38px;
+        text-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
+    } 
+    
+    .profile {
+        color: white;
+        position: absolute;
+        top: 12px; 
+        right: 10px; 
+        margin: 8px 10px;
+        font-size: 35px;
+        text-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
+    }
+
+    footer {
+        text-align: center;
+        font-size: 16px;
+        margin-top: auto;
+        padding: 10px;
+    }
+
+    /* overall container adjustments */
+    .review-container, .signin-container, .selector-container{
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: center;
+        width: 350px;
+        background-color: #FAF9F6;
+        margin: 2rem auto;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
+    }
+
+    /* home and mood page button adjustments */
+    .mood-button, .heart-button {
+        font-family: "Helvetica Neue";
+        font-weight: bold;
+        font-size: 8px;
+        background-color: #FAF9F6;
+        border: 2.5px solid black;
+        color: black;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 16px;
+        outline: none;
+        position: absolute;
+        left: 45px;
+        top: 260px;
+    }
+
+    .merch-button {
+        font-family: "Helvetica Neue";
+        font-weight: bold;
+        font-size: 8px;
+        background-color: #FAF9F6;
+        border: 2.5px solid black;
+        color: black;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 16px;
+        outline: none;
+        position: absolute;
+        left: 43px;
+        top: 370px;
+    }
+
+    .quiz-button {
+        font-family: "Helvetica Neue";
+        font-weight: bold;
+        font-size: 8px;
+        background-color: #FAF9F6;
+        border: 2.5px solid black;
+        color: black;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 16px;
+        outline: none;
+        position: absolute;
+        left: 305px;
+        top: 385px;
+    }
+
+    .review-button {
+        font-family: "Helvetica Neue";
+        font-weight: bold;
+        font-size: 8px;
+        background-color: #FAF9F6;
+        border: 2.5px solid black;
+        color: black;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 16px;
+        outline: none;
+        position: absolute;
+        left: 170px;
+        top: 326px;
+    }
+
+    /* mood background mobile example change for eg_mood page */
+    .sad-background {
+        background-image: url("../public/img/bg_sad_mobile.jpg");
+        background-size: cover;
+    }
+
+    /* sign-up page adjustments */
+    .sign-up {
+        width: 100%;
+        text-align: left; 
+        margin: 0 .5rem;
+    }
+    
+    .signup-labels {
+        font-family: "Helvetica Neue";
+        font-weight: 400;
+        display: block; 
+        text-align: left; 
+        margin-bottom: 10px; 
+        margin-top: 10px;
+    }
+    
+    form input {
+        width: 100%; 
+        padding: 10px; 
+        margin-bottom: 15px;
+    }
+    
+    .submit {
+        background-color: rgb(113, 201, 255); 
+        color: black; 
+        font-size: 15px; 
+        font-family: "Helvetica Neue";
+        font-style: italic;
+        border-radius: 5px; 
+        margin: 0 auto; 
+        text-align: center; 
+        line-height: 1.5; 
+        padding-top: .5rem;
+    }
+    
+    .notice, .select-notice {
+        font-family: "Helvetica Neue";
+        font-weight: 300;
+        text-align: center;
+        font-size: 13px;
+        letter-spacing: .1em;
+        margin: 0 .2rem;
+        padding-bottom: .5rem;
+    }
+
+    .subscribe, .select-title {
+        font-size: 18px;
+        text-align: center; 
+        padding-top: 1rem;
+        line-height: 1.5;
+        letter-spacing: .25em;
+    }
+
+    /* review and rate page inner containers adjustments */
+    .review-input, .rate-input {
+        display: block;
+        flex: 0 0 30px;
+        background-color: #eee;
+        margin: .5rem;
+        padding-bottom: .5rem;
+        border-radius: 10px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 1px 3px rgba(0,0,0,0.23);
+
+    }
+
+    /* mood page option selector adjustments */
+    .selector {
+        max-width: 100%; 
+        margin: 0; 
+        padding-top: .5rem;
+        padding-bottom: 1rem;
+        text-align: center; 
+    }
+
+    /* user input field for review adjustments */
+    .review-inputfield textarea {
+        resize: none; 
+        outline: none;
+        border: 1px solid white;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    /* quiz page mobile adjusments */
+    .drake-album2 {
+        display: block;
+        margin-left: auto;
+        margin-right: .1rem;
+        max-width: 100%;
+        width: 45%;
+        border-radius: 8px;
+    }
+    
+    .flex-container-quiz>div {
+        font-size: 14px;
+        flex: 0 0 175px;
+        background-color: white;
+        padding: .5rem .5rem .5rem .5rem;
+        margin: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
+    }
+    
+    .quiz-title, .question-number {
+        font-family: "Helvetica Neue";
+        font-size: 15px;
+        margin: .5rem;
+        padding-top: .5rem;
+        text-shadow: 1px 1px 1px grey;
+        letter-spacing: .10em;
+        text-align: center;
+    }
+
+}
+
+/* Medium screens (tablets) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	body {
+        	font-size: 18px;
+	}
+	.header {
+        	font-size: 28px;
+    	}
+}
+
+/* Large screens (desktops) */
+@media screen and (min-width: 1024px) {
+	body {
+		font-size: 20px;
+	}
+       .header {
+        	font-size: 32px;
+    	}
+}
