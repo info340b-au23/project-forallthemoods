@@ -310,6 +310,13 @@ select {
 
 /* home and mood page button styling */
 
+.mood-button .button-link, 
+.quiz-button .button-link, 
+.review-button .button-link {
+    color: black;
+    text-decoration: none;
+}
+
 .mood-button, .heart-button {
     font-family: "Helvetica Neue";
     font-weight: bold;

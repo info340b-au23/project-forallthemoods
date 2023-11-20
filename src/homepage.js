@@ -22,10 +22,10 @@ export function HomePage() {
         </nav>
   
         <main>
-          <button className="mood-button"><Link to='/mood'>MY MOODS</Link></button>
-          <a className="merch-button" href="https://us.octobersveryown.com/" target="_blank" rel="noopener noreferrer">MERCH</a>
-          <button className="quiz-button"><Link to='/quiz'>QUIZ</Link></button>
-          <button className="review-button"><Link to='/review'>REVIEW/RATE</Link></button>
+          <button className="mood-button"><Link to='/mood' className="button-link">MY MOODS</Link></button>
+          <button className="merch-button button-link" href="https://us.octobersveryown.com/" target="_blank" rel="noopener noreferrer">MERCH</button>
+          <button className="quiz-button" ><Link to='/quiz' className="button-link">QUIZ</Link></button>
+          <button className="review-button"><Link to='/review' className="button-link">REVIEW/RATE</Link></button>
         </main>
   
         <footer>
