@@ -5,7 +5,7 @@ import { HomePage } from './homepage';
 import { ReviewPage } from './review';
 import { SignUpPage } from './sign-up';
 import { MoodPage } from './mood';
-import { eg_moodPage } from './eg_mood';
+import { egmoodPage } from './eg_mood';
 
 
 
@@ -17,7 +17,7 @@ function App() {
                 <Route path='/quiz' element={<QuizPage />} />
                 <Route path='/review' element={<ReviewPage />} />
                 <Route path='/mood' element={<MoodPage />} />
-                <Route path='/eg_mood' element={<eg_moodPage />} /> 
+                <Route path='/eg_mood' element={<egmoodPage />} /> 
                 <Route path='/sign-up' element={<SignUpPage />} />
 
             </Routes>
