@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
-const Mood = () => {
+const MoodPage = () => {
     const [selectedMood, setSelectedMood] = useState(null);
     const [showModal, setShowModal] = useState(false);
     const navigate = useNavigate();
@@ -73,4 +73,4 @@ const Mood = () => {
     );
 };
 
-export default Mood;
+export default MoodPage;
