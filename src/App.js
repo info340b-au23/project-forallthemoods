@@ -18,7 +18,7 @@ function App() {
                 <Route path='/quiz' element={<QuizPage />} />
                 <Route path='/review' element={<ReviewPage />} />
                 <Route path='/mood' element={<MoodPage />} />
-                <Route path='/eg_mood' element={<EgmoodPage />} /> 
+                <Route path='/egmoodPage' element={<egmoodPage />} /> 
                 <Route path='/sign-up' element={<SignUpPage />} />
 
             </Routes>
