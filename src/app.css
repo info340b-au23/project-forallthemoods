@@ -466,6 +466,20 @@ p {
     height: 100vh;
 }
 
+.submit-button, .close-button {
+    display: inline-block;
+    background-color: rgb(211, 208, 208); 
+    color: black; 
+    font-size: 15px; 
+    font-family: "Helvetica Neue";
+    font-style: italic;
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    margin: 0 auto; 
+    text-align: center;
+    line-height: 1.5; 
+}
+
 
 /* media queries */
 /* Small screens (mobile) */

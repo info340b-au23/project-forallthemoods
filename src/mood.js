@@ -61,8 +61,8 @@ export function MoodPage()  {
                                 <option value="combination">Combination Drake</option>
                             </select>
                         </form>
-                        <button onClick={handleSubmit}>Submit</button>
-                        <button onClick={handleCloseModal}>Close</button>
+                        <button className='submit-button' onClick={handleSubmit}>Submit</button>
+                        <button className='close-button' onClick={handleCloseModal}>Close</button>
                     </div>
                 )}
             </div>
@@ -75,5 +75,3 @@ export function MoodPage()  {
         </div>
     );
 };
-
-// export default MoodPage;
