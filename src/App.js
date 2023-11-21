@@ -4,8 +4,9 @@ import './app.css';
 import { HomePage } from './homepage';
 import { ReviewPage } from './review';
 import { SignUpPage } from './sign-up';
-import { MoodPage } from './mood';
-import { egmoodPage } from './eg_mood';
+// import { MoodPage } from './mood';
+// import { egmoodPage } from './eg_mood';
+import { QuizPage } from './quiz';
 
 
 
@@ -16,8 +17,8 @@ function App() {
                 <Route path='/' element={<HomePage />} />
                 <Route path='/quiz' element={<QuizPage />} />
                 <Route path='/review' element={<ReviewPage />} />
-                <Route path='/mood' element={<MoodPage />} />
-                <Route path='/eg_mood' element={<egmoodPage />} /> 
+                {/* <Route path='/mood' element={<MoodPage />} /> */}
+                {/* <Route path='/egmoodPage' element={<egmoodPage />} />  */}
                 <Route path='/sign-up' element={<SignUpPage />} />
 
             </Routes>
