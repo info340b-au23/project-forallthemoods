@@ -4,12 +4,10 @@ import Navbar from 'react-bootstrap/Navbar';
 
 export function NaviBar() {
     return (
-      <Navbar expand="lg" className="bg-body-tertiary">
-        <Container className='nav-container'>
-          {/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
-          {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
+      <Navbar expand="lg" className="nav-container">
+        <Container className='me-auto'>
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="nav">
               <Nav.Link href="/">HOME PAGE</Nav.Link>
               <Nav.Link href="/quiz">QUIZ</Nav.Link>
               <Nav.Link href="/review">REVIEW</Nav.Link>
