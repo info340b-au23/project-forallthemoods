@@ -25,7 +25,7 @@ const EgmoodPage = () => {
 
             <button className="mood-button">{mood}</button>
 
-            <div className={`eg-mood-background ${ mood ? mood.toLowerCase() + '\project-draft-1\img\bg-sad.jpg' : ''}`}>
+            <div className={`eg-mood-background ${ mood ? mood.toLowerCase() + '\public\img\bg-sad.jpg' : ''}`}>
                 <button className="mood-button"><Link to='/mood' className="button-link">Nostalgic Drake</Link></button>
                 <a className="merch-button" href="https://us.octobersveryown.com/" target="_blank">MERCH</a>
                 <button className="quiz-button">QUIZ</button>
