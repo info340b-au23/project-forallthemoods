@@ -13,10 +13,13 @@ export function MoodPage()  {
     const handleShowModal = () => {
         setShowModal(!showModal);
     };
-
+    
+    const handleCloseModal = () => {
+        setShowModal(false);
+    }
     const handleSubmit = () => {
         if (selectedMood) {
-            navigate('/eg_mood/${selectedMood.toLowerCase()}')
+            navigate(`/eg_mood/${selectedMood.toLowerCase()}`)
         }
     };
 
@@ -49,7 +52,7 @@ export function MoodPage()  {
                     <div className="modal">
                         <form className="selector">
                             <label className="selecter-options" html="mood">MOOD:</label>
-                            <select id="mood" name="mood" onChange={handleMoodChange}>
+                            <select id="mood" name="mood" onChange={handleMoodChange} value={selectedMood || ''}>
                                 <option value="party">Party Drake</option>
                                 <option value="nostalgic">Nostalgic Drake</option>
                                 <option value="heartbreak">Heartbreak Drake</option>
@@ -59,7 +62,7 @@ export function MoodPage()  {
                             </select>
                         </form>
                         <button onClick={handleSubmit}>Submit</button>
-                        <button onClick={handleShowModal}>Close</button>
+                        <button onClick={handleCloseModal}>Close</button>
                     </div>
                 )}
             </div>
