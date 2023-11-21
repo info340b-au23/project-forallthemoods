@@ -22,8 +22,12 @@ function naviBar() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="/">HOME PAGE</Nav.Link>
+              <Nav.Link href="/quiz">QUIZ</Nav.Link>
+              <Nav.Link href="/review">REVIEW</Nav.Link>
+              <Nav.Link href="/mood">MOOD</Nav.Link>
+              <Nav.Link href="/eg_mood">MOOD EXAMPLE (Nostalgic Drake)</Nav.Link>
+              <Nav.Link href="/signup">SIGN-UP</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -31,4 +35,4 @@ function naviBar() {
     );
   }
   
-  export default BasicExample;
+  export default naviBar;
