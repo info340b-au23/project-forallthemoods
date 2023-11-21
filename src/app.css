@@ -463,6 +463,7 @@ p {
 .sad-background {
 	background-image: url("../public/img/bg-sad.jpg");
 	background-size: cover;
+    height: 100vh;
 }
 
 
