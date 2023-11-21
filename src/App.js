@@ -23,6 +23,7 @@ function App(props) {
                 <Route path='/eg_mood' element={<EgmoodPage />} /> 
                 <Route path='/signup' element={<SignUpPage />} />
             </Routes>
+            
         </div>
     )
 }
