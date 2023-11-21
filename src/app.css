@@ -594,6 +594,25 @@ p {
         top: 326px;
     }
 
+    .modal_button {
+        font-family: "Helvetica Neue";
+        font-weight: bold;
+        font-size: 8px;
+        background-color: #FAF9F6;
+        border: 2.5px solid black;
+        color: black;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 16px;
+        outline: none;
+        position: absolute;
+        left: 170px;
+        top: 326px;
+    }
+    
     /* mood background mobile example change for eg_mood page */
     .sad-background {
         background-image: url("../public/img/bg_sad_mobile.jpg");
