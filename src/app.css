@@ -318,6 +318,8 @@ select {
     font-family: "Helvetica Neue";
     font-weight: bold;
     font-size: 20px;
+    text-shadow: none;
+    letter-spacing: normal;
 }
 
 .mood-button, .heart-button {
@@ -401,6 +403,13 @@ select {
     color: #FFF;
 }
 
+.mood-button:hover .button-link, 
+.quiz-button:hover .button-link, 
+.review-button:hover .button-link {
+    background-color: #000;
+    color: #FFF;
+}
+
 /* jaydens quiz page container individual styling */
   
 .flex-container-quiz {
@@ -470,15 +479,31 @@ p {
     display: inline-block;
     background-color: rgb(211, 208, 208); 
     color: black; 
-    font-size: 15px; 
+    font-size: 12px; 
     font-family: "Helvetica Neue";
-    font-style: italic;
-    padding: 5px 10px; 
+    padding: 3px 10px; 
     border-radius: 5px; 
     margin: 0 auto; 
     text-align: center;
-    line-height: 1.5; 
+    line-height: 1.5;
+    margin-bottom: 10px;
 }
+
+.submit-button {
+    margin-right: 10px;
+}
+
+.close-button {
+    margin-right: 35px;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.modal-container {
+    display: block; /* or any other style you want to apply when showModal is true */
+  }
 
 
 /* media queries */
@@ -744,6 +769,15 @@ p {
         text-shadow: 1px 1px 1px grey;
         letter-spacing: .10em;
         text-align: center;
+    }
+
+
+    .submit-button {
+        margin-right: 5px;
+    }
+
+    .close-button {
+        margin-right: 5px;
     }
 
 }

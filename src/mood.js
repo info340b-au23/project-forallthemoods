@@ -42,7 +42,7 @@ export function MoodPage()  {
                 </nav>
             </div>
 
-            <div className ="selector-container">
+            <div className={`selector-container ${showModal ? 'modal-container' : ''}`}>
                 <h1 className="select-title">SELECT YOUR MOOD</h1>
                 <p className="select-notice">SELECT YOUR MOOD AND LISTEN TO A PLAYLIST CURATED FOR YOUR MOOD.</p>
 
@@ -61,8 +61,10 @@ export function MoodPage()  {
                                 <option value="combination">Combination Drake</option>
                             </select>
                         </form>
-                        <button className='submit-button' onClick={handleSubmit}>Submit</button>
-                        <button className='close-button' onClick={handleCloseModal}>Close</button>
+                        <div className='button-container'>
+                            <button className='submit-button' onClick={handleSubmit}>Submit</button>
+                            <button className='close-button' onClick={handleCloseModal}>Close</button>
+                        </div>
                     </div>
                 )}
             </div>

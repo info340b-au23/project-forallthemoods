@@ -51,46 +51,48 @@ export function SignUpPage() {
   };
 
     return (
-      <div className="nav-container">
-        <span className="menu material-icons">menu</span>
-        <header>FOR ALL THE MOODS</header>
-        <span className="profile material-icons">account_circle</span>
-  
-        <nav>
-          <ul>
-            <li><Link to='/'>HOME PAGE</Link></li>
-            <li><Link to='/quiz'>QUIZ</Link></li>
-            <li><Link to='/review'>REVIEW</Link></li>
-            <li><Link to='/mood'>MOOD</Link></li>
-            <li><Link to='/eg_mood'>MOOD EXAMPLE</Link></li>
-            <li><Link to='/signup'>SIGN-UP</Link></li>
-          </ul>
-        </nav>
-  
-        <main>
-  
-          <div className="signin-container">
-            <h1 className="subscribe">FOR ALL THE MOODS PROFILE</h1>
-            <h2 className="notice">CREATE AN ACCOUNT TO BE NOTIFIED WITH POST REVIEWS, QUIZ RESULTS, AND DRAKE NEWS.</h2>
-            <form className="sign-up" onSubmit={Submit}>
-              <label className="signup-labels" htmlFor="email">EMAIL *</label>
-              <input className="signup-inputs" type="text" id="email" name="email" value={email} onChange={EmailChange} required /><br />
-              {errors.email && <p className="error-message">{errors.email}</p>}
-              <label className="signup-labels" htmlFor="name">NAME *</label>
-              <input className="signup-inputs" type="text" id="name" name="name" value={name} onChange={NameChange} required /><br />
-              {errors.name && <p className="error-message">{errors.name}</p>}
-              <label className="signup-labels" htmlFor="password">PASSWORD *</label>
-              <input className="signup-inputs" type="password" id="password" name="password" value={password} onChange={PasswordChange} required /><br />
-              {errors.password && <p className="error-message">{errors.password}</p>}
-              <input className="submit" type="submit" aria-label="submit button" value="submit" />
-            </form>
-          </div>
-        </main>
+      <div>
+        <div className="nav-container">
+          <span className="menu material-icons">menu</span>
+          <header>FOR ALL THE MOODS</header>
+          <span className="profile material-icons">account_circle</span>
+      
+          <nav>
+            <ul>
+              <li><Link to='/'>HOME PAGE</Link></li>
+              <li><Link to='/quiz'>QUIZ</Link></li>
+              <li><Link to='/review'>REVIEW</Link></li>
+              <li><Link to='/mood'>MOOD</Link></li>
+              <li><Link to='/eg_mood'>MOOD EXAMPLE</Link></li>
+              <li><Link to='/signup'>SIGN-UP</Link></li>
+            </ul>
+          </nav>
+        </div>
+    
+          <main>
+    
+            <div className="signin-container">
+              <h1 className="subscribe">FOR ALL THE MOODS PROFILE</h1>
+              <h2 className="notice">CREATE AN ACCOUNT TO BE NOTIFIED WITH POST REVIEWS, QUIZ RESULTS, AND DRAKE NEWS.</h2>
+              <form className="sign-up" onSubmit={Submit}>
+                <label className="signup-labels" htmlFor="email">EMAIL *</label>
+                <input className="signup-inputs" type="text" id="email" name="email" value={email} onChange={EmailChange} required /><br />
+                {errors.email && <p className="error-message">{errors.email}</p>}
+                <label className="signup-labels" htmlFor="name">NAME *</label>
+                <input className="signup-inputs" type="text" id="name" name="name" value={name} onChange={NameChange} required /><br />
+                {errors.name && <p className="error-message">{errors.name}</p>}
+                <label className="signup-labels" htmlFor="password">PASSWORD *</label>
+                <input className="signup-inputs" type="password" id="password" name="password" value={password} onChange={PasswordChange} required /><br />
+                {errors.password && <p className="error-message">{errors.password}</p>}
+                <input className="submit" type="submit" aria-label="submit button" value="submit" />
+              </form>
+            </div>
+          </main>
         <footer>
-        <small>
-            &copy; 2023 For All the Moods
-        </small>
-    </footer>
+            <small>
+              &copy; 2023 For All the Moods
+            </small>
+        </footer>
       </div>
     );
   }
