@@ -315,6 +315,9 @@ select {
 .review-button .button-link {
     color: black;
     text-decoration: none;
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .mood-button, .heart-button {
