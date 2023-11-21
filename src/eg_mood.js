@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 
-const egmoodPage = () => {
+const eg_moodPage = () => {
     const { mood } = useParams();
 
     return (
@@ -40,4 +40,4 @@ const egmoodPage = () => {
     );
 };
 
-export default egmoodPage;
+export default eg_moodPage;
