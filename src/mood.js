@@ -19,7 +19,7 @@ export function MoodPage()  {
     }
     const handleSubmit = () => {
         if (selectedMood) {
-            navigate(`/eg_mood/${selectedMood.toLowerCase()}`)
+            navigate(`/`)
         }
     };
 
