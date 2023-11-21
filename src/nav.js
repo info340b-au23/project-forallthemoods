@@ -14,7 +14,7 @@ export function NaviBar() {
               <Nav.Link href="/quiz">QUIZ</Nav.Link>
               <Nav.Link href="/review">REVIEW</Nav.Link>
               <Nav.Link href="/mood">MOOD</Nav.Link>
-              <Nav.Link href="/eg_mood">MOOD EXAMPLE (Nostalgic Drake)</Nav.Link>
+              <Nav.Link href="/eg_mood">MOOD EXAMPLE</Nav.Link>
               <Nav.Link href="/signup">SIGN-UP</Nav.Link>
             </Nav>
           </Navbar.Collapse>
