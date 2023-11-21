@@ -7,12 +7,14 @@ import { SignUpPage } from './signup';
 import { MoodPage } from './mood';
 import  EgmoodPage  from './eg_mood';
 import { QuizPage } from './quiz';
+import { naviBar } from './nav';
 
 
 
 function App(props) {
     return (
         <div>
+            <naviBar />
             <Routes>
                 <Route path='/' element={<HomePage />} />
                 <Route path='/quiz' element={<QuizPage />} />
