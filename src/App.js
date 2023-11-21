@@ -14,6 +14,7 @@ import { NaviBar } from './nav';
 function App(props) {
     return (
         <div>
+            <NaviBar />
             <Routes>
                 <Route path='/' element={<HomePage />} />
                 <Route path='/quiz' element={<QuizPage />} />
@@ -22,7 +23,6 @@ function App(props) {
                 <Route path='/eg_mood' element={<EgmoodPage />} /> 
                 <Route path='/signup' element={<SignUpPage />} />
             </Routes>
-            <NaviBar />
         </div>
     )
 }
