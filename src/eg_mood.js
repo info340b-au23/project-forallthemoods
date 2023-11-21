@@ -18,7 +18,7 @@ const EgmoodPage = () => {
                         <li><Link to="/review">REVIEW</Link></li>
                         <li><Link to="/mood">MOOD</Link></li>
                         <li><Link to="/eg_mood">MOOD EXAMPLE</Link></li>
-                        <li><Link to="/sign_up">SIGN-UP</Link></li>
+                        <li><Link to="/signup">SIGN-UP</Link></li>
                     </ul>
                 </nav>
             </div>

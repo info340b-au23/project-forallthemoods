@@ -3,14 +3,14 @@ import { Routes, Route } from 'react-router-dom';
 import './app.css';
 import { HomePage } from './homepage';
 import { ReviewPage } from './review';
-import { SignUpPage } from './sign-up';
+import { SignUpPage } from './signup';
 import { MoodPage } from './mood';
 import  EgmoodPage  from './eg_mood';
 import { QuizPage } from './quiz';
 
 
 
-function App() {
+function App(props) {
     return (
         <div>
             <Routes>
@@ -19,8 +19,7 @@ function App() {
                 <Route path='/review' element={<ReviewPage />} />
                 <Route path='/mood' element={<MoodPage />} />
                 <Route path='/eg_mood' element={<EgmoodPage />} /> 
-                <Route path='/sign-up' element={<SignUpPage />} />
-
+                <Route path='/signup' element={<SignUpPage />} />
             </Routes>
         </div>
     )
