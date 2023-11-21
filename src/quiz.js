@@ -22,31 +22,31 @@ export function QuizPage() {
             <p className="quiz-caption">What is your favorite song from Take Care?</p>
 
             <section className="quiz-container">
-                        <div className="flex-container-quiz">
-                            <div className="question1">
-                                <input type="checkbox" value="check" id="check"/>
-                                <p>Take Care</p>
-                            </div>
+                <div className="flex-container-quiz">
+                    <div className="question1">
+                        <input type="checkbox" value="check" id="check"/>
+                            <p>Take Care</p>
+                    </div>
                   
-                            <div className="question2">
-                                <input type="checkbox" value="check" id="check"/>
-                                <p>Headlines</p>
-                            </div>
+                    <div className="question2">
+                        <input type="checkbox" value="check" id="check"/>
+                            <p>Headlines</p>
+                    </div>
                            
                             
-                            <div className="question3">
-                                <input type="checkbox" value="check" id="check"/>
-                                <p>Marvins Room</p>
-                            </div>
+                    <div className="question3">
+                        <input type="checkbox" value="check" id="check"/>
+                            <p>Marvins Room</p>
+                    </div>
                             
                             
-                            <div className="question4">
-                                <input type="checkbox" value="check" id="check"/>
-                                <p>HYFR</p>
-                            </div>
+                    <div className="question4">
+                        <input type="checkbox" value="check" id="check"/>
+                            <p>HYFR</p>
+                    </div>
         
-                        </div>
-                    </section>
+                </div>
+            </section>
           </div>
         </main>
       <footer>
