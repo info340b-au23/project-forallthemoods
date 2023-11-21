@@ -23,4 +23,4 @@ export function NaviBar() {
     );
   }
   
-  // export default naviBar;
+export default NaviBar;
