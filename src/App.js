@@ -7,7 +7,7 @@ import { SignUpPage } from './Signup';
 import { MoodPage } from './Mood';
 import  EgmoodPage  from './Eg_mood';
 import { QuizPage } from './Quiz';
-import { NaviBar } from './Nav';
+import { NaviBar } from './nav';
 import { Header } from './Header';
 import { Footer } from './Footer';
 
@@ -16,7 +16,9 @@ import { Footer } from './Footer';
 function App(props) {
     return (
         <div className='d-flex flex-column flex-fill'>
-            <Header />
+            <header>
+                <h1>FOR ALL THE MOODS</h1>
+            </header>
             <NaviBar />
             <div className='container-fluid'>
                 <Routes>
