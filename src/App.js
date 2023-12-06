@@ -7,7 +7,7 @@ import { SignUpPage } from './Signup';
 import { MoodPage } from './Mood';
 import  EgmoodPage  from './Eg_mood';
 import { QuizPage } from './Quiz';
-import { NaviBar } from './nav';
+import { NaviBar } from './Nav';
 import { Header } from './Header';
 import { Footer } from './Footer';
 
