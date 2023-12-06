@@ -6,13 +6,6 @@ const EgmoodPage = () => {
 
     return (
         <div className='sad-background'>
-            <div className="nav-container">
-                <span className="menu material-icons">menu</span>
-                <header>FOR ALL THE MOODS</header>
-                <span className="profile material-icons">account_circle</span>
-
-
-            </div>
 {/* 
             <button className="mood-button">{mood}</button> */}
 
@@ -22,12 +15,6 @@ const EgmoodPage = () => {
                 <button className="quiz-button"> QUIZ</button>
                 <button className="review-button">REVIEW/RATE</button>
             </div>
-
-            <footer>
-                <small>
-                    &copy; 2023 For All the Moods
-                </small>
-            </footer>
         </div>
     );
 };

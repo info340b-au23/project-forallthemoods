@@ -2,13 +2,6 @@
 export function ReviewPage() {
     return (
       <div>
-        <div className="nav-container">
-          <span className="menu material-icons">menu</span>
-          <header>FOR ALL THE MOODS</header>
-          <span className="profile material-icons">account_circle</span>
-    
-        </div>
-    
           <main>
             <div className="review-container">
     
@@ -41,11 +34,6 @@ export function ReviewPage() {
               </div>
             </div>
           </main>
-        <footer>
-            <small>
-              &copy; 2023 For All the Moods
-            </small>
-          </footer>
       </div>
     );
   }

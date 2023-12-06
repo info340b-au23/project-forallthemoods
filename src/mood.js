@@ -25,12 +25,6 @@ export function MoodPage()  {
 
     return (
         <div>
-            <div className="nav-container">
-                <span className="menu material-icons">menu</span>
-                <header>FOR ALL THE MOODS</header>
-                <span className="profile material-icons">account_circle</span>
-            </div>
-
             <div className={`selector-container ${showModal ? 'modal-container' : ''}`}>
                 <h1 className="select-title">SELECT YOUR MOOD</h1>
                 <p className="select-notice">SELECT YOUR MOOD AND LISTEN TO A PLAYLIST CURATED FOR YOUR MOOD.</p>
@@ -57,12 +51,6 @@ export function MoodPage()  {
                     </div>
                 )}
             </div>
-            
-            <footer>
-                <small>
-                    &copy; 2023 For All the Moods
-                </small>
-            </footer>
         </div>
     );
 };

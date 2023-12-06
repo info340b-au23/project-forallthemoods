@@ -22,7 +22,10 @@ header{
     padding: 1rem;
     padding-bottom: .5rem;
     text-decoration: none;
+}
 
+.container-fluid {
+    flex-grow: 1;
 }
 
 footer {
@@ -161,6 +164,7 @@ h1 {
 .signup-labels {
     font-family: "Helvetica Neue";
     font-weight: 400;
+    font-size: 15px;
     display: block; 
     text-align: left; 
     margin-bottom: 5px; 

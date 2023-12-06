@@ -3,13 +3,6 @@ import React from 'react';
 export function QuizPage() {
   return (
     <div>
-      <div className="nav-container">
-        <span className="menu material-icons">menu</span>
-        <header>FOR ALL THE MOODS</header>
-        <span className="profile material-icons">account_circle</span>
-
-      </div>
-
         <main>
           <div className="review-container">
             <h1 className="quiz-title">WHAT TYPE OF DRAKE FAN ARE YOU?</h1>
@@ -49,11 +42,6 @@ export function QuizPage() {
             </section>
           </div>
         </main>
-      <footer>
-        <small>
-          &copy; 2023 For All the Moods
-        </small>
-      </footer>
     </div>
   );
 }

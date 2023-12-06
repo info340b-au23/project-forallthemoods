@@ -51,12 +51,6 @@ export function SignUpPage() {
 
     return (
       <div>
-        <div className="nav-container">
-          <span className="menu material-icons">menu</span>
-          <header>FOR ALL THE MOODS</header>
-          <span className="profile material-icons">account_circle</span>
-      
-        </div>
           <main>
     
             <div className="signin-container">
@@ -76,11 +70,6 @@ export function SignUpPage() {
               </form>
             </div>
           </main>
-        <footer>
-            <small>
-              &copy; 2023 For All the Moods
-            </small>
-        </footer>
       </div>
     );
   }
