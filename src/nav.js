@@ -9,11 +9,11 @@ export function NaviBar() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="nav">
               <Nav.Link href="/">HOME PAGE</Nav.Link>
-              <Nav.Link href="/quiz">QUIZ</Nav.Link>
-              <Nav.Link href="/review">REVIEW</Nav.Link>
-              <Nav.Link href="/mood">MOOD</Nav.Link>
-              <Nav.Link href="/eg_mood">MOOD EXAMPLE</Nav.Link>
-              <Nav.Link href="/signup">SIGN-UP</Nav.Link>
+              <Nav.Link href="/Quiz">QUIZ</Nav.Link>
+              <Nav.Link href="/Review">REVIEW</Nav.Link>
+              <Nav.Link href="/Mood">MOOD</Nav.Link>
+              <Nav.Link href="/Eg_mood">MOOD EXAMPLE</Nav.Link>
+              <Nav.Link href="/Signup">SIGN-UP</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
