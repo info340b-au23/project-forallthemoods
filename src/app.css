@@ -278,10 +278,11 @@ select {
 
 /* review and rate page icons styling*/
 
-.left, .right {
-    font-size: 50px; 
+section.image-container span.left,
+section.image-container span.right {
+    font-size: 40px; 
     padding: 1.5rem;
-    text-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.16), 0 5px 15px rgba(0, 0, 0, 0.23);
 }
 
 .filled {
