@@ -16,6 +16,7 @@ function App(props) {
     
     return (
         <div className='d-flex flex-column flex-fill'>
+            <Header />
             <NaviBar />
                 <Routes>
                     <Route path='/' element={<HomePage />} />
