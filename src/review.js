@@ -4,6 +4,7 @@ export function ReviewPage() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [reviewText, setReviewText] = useState('');
   const [userRating, setUserRating] = useState(0);
+  const [submissionMessage, setSubmissionMessage] = useState('');
 
   const images = [
     '/img/nothingwasthesame.avif',
@@ -46,10 +47,17 @@ export function ReviewPage() {
   };
 
   const handleReviewSubmit = () => {
-    console.log('Review submitted:', reviewText);
-    console.log('User rating:', userRating);
+    if (!reviewText || userRating === 0) {
+      setSubmissionMessage('PLEASE FILL OUT BOTH THE REVIEW AND RATING.');
+      return;
+    }
+  
+    setSubmissionMessage('REVIEW AND RATE SUBMITTED!');
     setReviewText('');
     setUserRating(0);
+    setTimeout(() => {
+      setSubmissionMessage('');
+    }, 7000);
   };
 
   return (
@@ -86,6 +94,9 @@ export function ReviewPage() {
               <button className="submit-review" onClick={handleReviewSubmit}>
                 Submit
               </button>
+              {submissionMessage && (
+                <p className='submission-message'>{submissionMessage}</p>
+              )}
             </section>
           </div>
 

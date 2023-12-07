@@ -139,6 +139,16 @@ h1 {
     border-radius: 10px;
 }
 
+p.submission-message {
+    font-family:  "Helvetica Neue";
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: .5rem;
+    margin-top: .2rem;
+    color: rgb(8, 123, 8);
+}
+
 /* text-form for sign-up */
 
 .sign-up {
@@ -275,6 +285,12 @@ section.image-container span.right {
     text-shadow: 0 5px 15px rgba(0, 0, 0, 0.16), 0 5px 15px rgba(0, 0, 0, 0.23);
 }
 
+section.image-container span.left:hover,
+section.image-container span.right:hover { 
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
 .filled {
     font-size: 35px;
     color: gold;
@@ -290,7 +306,7 @@ section.image-container span.right {
 
 .submit-review {
     display: block;
-    background-color: rgb(211, 208, 208); 
+    background-color: rgb(113, 201, 255);
     color: black; 
     font-size: 15px; 
     font-family: "Helvetica Neue";
