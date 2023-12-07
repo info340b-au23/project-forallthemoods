@@ -45,7 +45,7 @@ span.profile.material-icons {
     text-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
 }
 
-h1 {
+h1, h2 {
     font-family: "Helvetica Neue";
     font-size: 18px;
     margin-left: 1rem;
@@ -100,7 +100,7 @@ h1 {
 
 /* review and rate page inner containers styling */
 
-.review-input, .rate-input {
+.review-input, .rate-input, .other-reviews {
     display: block;
     flex: 0 0 30px;
     background-color: #eee;
@@ -137,6 +137,18 @@ h1 {
     outline: none;
     border: 1px solid white;
     border-radius: 10px;
+}
+
+.review-list {
+    font-family: "Helvetica Neue";
+    font-size: 15.5px;
+    font-weight: 400;
+}
+
+.review-albumname {
+    font-family: "Helvetica Neue";
+    font-size: 16px;
+    font-weight: bold;
 }
 
 p.submission-message {
@@ -524,21 +536,11 @@ p {
         	font-size: 16px;
             background-image: url("../public/img/bgs/bg_default_mobile.jpg");
 	}
-
-    .menu {
-        color: white;
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin: 20px 15px;
-        font-size: 38px;
-        text-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
-    } 
     
-    .profile {
+    span.profile.material-icons {
         color: white;
         position: absolute;
-        top: 12px; 
+        top: 15px; 
         right: 10px; 
         margin: 8px 10px;
         font-size: 35px;

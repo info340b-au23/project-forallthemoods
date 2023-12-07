@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export function ReviewPage() {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [reviewText, setReviewText] = useState('');
-  const [userRating, setUserRating] = useState(0);
-  const [submissionMessage, setSubmissionMessage] = useState('');
+  let [currentImageIndex, setCurrentImageIndex] = useState(0);
+  let [reviewText, setReviewText] = useState('');
+  let [userRating, setUserRating] = useState(0);
+  let [submissionMessage, setSubmissionMessage] = useState('');
+  let [reviews, setReviews] = useState([]);
+  let [showOtherReviews, setShowOtherReviews] = useState(false);
 
-  const images = [
+  let images = [
     '/img/nothingwasthesame.avif',
     '/img/For_All_The_Dogs.jpg',
     '/img/her-loss.jpg',
@@ -18,7 +20,7 @@ export function ReviewPage() {
     '/img/clb.jpg',
   ];
 
-  const captions = [
+  let captions = [
     'Nothing Was The Same',
     'For All The Dogs',
     'Her Loss',
@@ -30,35 +32,66 @@ export function ReviewPage() {
     'CLB',
   ];
 
-  const handlePrevClick = () => {
+  let handlePrevClick = () => {
     setCurrentImageIndex((prevIndex) =>
       prevIndex > 0 ? prevIndex - 1 : images.length - 1
     );
+
+    setShowOtherReviews(false);
   };
 
-  const handleNextClick = () => {
+  let handleNextClick = () => {
     setCurrentImageIndex((prevIndex) =>
       prevIndex < images.length - 1 ? prevIndex + 1 : 0
     );
   };
 
-  const handleRatingClick = (rating) => {
+  useEffect(() => {
+    resetReviewAndRating();
+  }, [currentImageIndex]);
+
+  useEffect(() => {
+    setShowOtherReviews(false);
+  }, [currentImageIndex]);
+
+  let handleRatingClick = (rating) => {
     setUserRating(rating);
   };
 
-  const handleReviewSubmit = () => {
+  let handleReviewSubmit = () => {
     if (!reviewText || userRating === 0) {
       setSubmissionMessage('PLEASE FILL OUT BOTH THE REVIEW AND RATING.');
       return;
     }
-  
+
+    let newReview = {
+      imageIndex: currentImageIndex,
+      caption: captions[currentImageIndex],
+      reviewText,
+      userRating,
+    };
+
+    setReviews((prevReviews) => [...prevReviews, newReview]);
+
     setSubmissionMessage('REVIEW AND RATE SUBMITTED!');
+    resetReviewAndRating();
     setReviewText('');
     setUserRating(0);
+    setShowOtherReviews(true);
+
     setTimeout(() => {
       setSubmissionMessage('');
     }, 7000);
   };
+
+  let resetReviewAndRating = () => {
+    setReviewText('');
+    setUserRating(0);
+  };
+
+  let currentImageReviews = reviews.filter(
+    (review) => review.imageIndex === currentImageIndex
+  );
 
   return (
     <div>
@@ -116,6 +149,20 @@ export function ReviewPage() {
               ))}
             </section>
           </div>
+          {showOtherReviews && (
+            <div className='other-reviews'>
+              <h2>OTHER REVIEWS:</h2>
+              <ul>
+                {currentImageReviews.map((review, index) => (
+                  <li key={index}>
+                    <p className='review-albumname'>{review.caption}</p>
+                    <p className='review-list'>{review.reviewText}</p>
+                    <p className='review-list'>{`Rating: ${review.userRating}`}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       </main>
     </div>
