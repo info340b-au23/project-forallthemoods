@@ -66,6 +66,7 @@ h1 {
 /* navigation bar */
 
 .nav-container {
+    backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
     justify-content: center;
