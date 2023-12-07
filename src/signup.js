@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 
+
 export function SignUpPage() {
 
   let [email, setEmail] = useState('');
   let [name, setName] = useState('');
   let [password, setPassword] = useState('');
   let [errors, setErrors] = useState({});
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
 
   let EmailChange = (e) => {
@@ -42,7 +44,9 @@ export function SignUpPage() {
       setErrors(validationErrors);
       return;
     }
-  
+    
+    setIsSubmitted(true);
+
     setEmail('');
     setName('');
     setPassword('');
@@ -52,7 +56,11 @@ export function SignUpPage() {
     return (
       <div>
           <main>
-    
+            {isSubmitted ? (
+              <div className='confirmation-container'>
+                <h1 className="confirmation-message">SIGNED UP SUCCESSFULLY!</h1>
+              </div>
+            ) : (
             <div className="signin-container">
               <h1 className="subscribe">FOR ALL THE MOODS PROFILE</h1>
               <h2 className="notice">CREATE AN ACCOUNT TO BE NOTIFIED WITH POST REVIEWS, QUIZ RESULTS, AND DRAKE NEWS.</h2>
@@ -69,6 +77,7 @@ export function SignUpPage() {
                 <input className="submit" type="submit" aria-label="submit button" value="SUBMIT" />
               </form>
             </div>
+            )}
           </main>
       </div>
     );
