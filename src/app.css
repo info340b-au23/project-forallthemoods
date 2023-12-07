@@ -180,7 +180,6 @@ form input {
     color: black; 
     font-size: 15px; 
     font-family: "Helvetica Neue";
-    font-style: italic;
     padding: 5px 10px; 
     border-radius: 5px; 
     margin: .5rem auto; 
@@ -690,18 +689,6 @@ p {
         margin-bottom: 15px;
     }
     
-    .submit {
-        background-color: rgb(113, 201, 255); 
-        color: black; 
-        font-size: 15px; 
-        font-family: "Helvetica Neue";
-        font-style: italic;
-        border-radius: 5px; 
-        margin: 0 auto; 
-        text-align: center; 
-        line-height: 1.5; 
-        padding-top: .5rem;
-    }
     
     .notice, .select-notice {
         font-family: "Helvetica Neue";
