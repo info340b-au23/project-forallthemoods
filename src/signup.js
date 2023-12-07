@@ -66,7 +66,7 @@ export function SignUpPage() {
                 <label className="signup-labels" htmlFor="password">PASSWORD *</label>
                 <input className="signup-inputs" type="password" id="password" name="password" value={password} onChange={PasswordChange} required /><br />
                 {errors.password && <p className="error-message">{errors.password}</p>}
-                <input className="submit" type="submit" aria-label="submit button" value="submit" />
+                <input className="submit" type="submit" aria-label="submit button" value="SUBMIT" />
               </form>
             </div>
           </main>
