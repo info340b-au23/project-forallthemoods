@@ -8,7 +8,6 @@ export function NaviBar() {
   };
     return (
       <div className="nav-container">
-          <span className="menu material-icons">menu</span>
           <header>FOR ALL THE MOODS</header>
           <span className="profile material-icons" onClick={handleProfileClick}>account_circle</span>
       <Navbar expand="lg" className="nav-container">
@@ -27,5 +26,3 @@ export function NaviBar() {
       </div>
     );
   }
-  
-  // export default naviBar;
