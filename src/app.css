@@ -4,7 +4,7 @@ body{
     padding: 0;
     height: 100%;
     background-color: white;
-    background-image: url("../public/img/bg_default.jpg");
+    background-image: url("../public/img/bgs/bg_default.jpg");
     background-size: cover;
     min-height: 100vh;
     display: flex;
@@ -474,7 +474,7 @@ p {
 /* mood background example change for eg_mood page */
 
 .sad-background {
-	background-image: url("../public/img/bg-sad.jpg");
+	background-image: url("../public/img/bgs/bg-nost.jpg");
 	background-size: cover;
     height: 100vh;
 }
@@ -517,7 +517,7 @@ p {
     /* overall page adjustment */
 	body {
         	font-size: 16px;
-            background-image: url("../public/img/bg_default_mobile.jpg");
+            background-image: url("../public/img/bgs/bg_default_mobile.jpg");
 	}
 
     .menu {
@@ -658,7 +658,7 @@ p {
     
     /* mood background mobile example change for eg_mood page */
     .sad-background {
-        background-image: url("../public/img/bg_sad_mobile.jpg");
+        background-image: url("../public/img/bgs/bg_nost_mobile.jpg");
         background-size: cover;
     }
 
