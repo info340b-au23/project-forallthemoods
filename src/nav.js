@@ -4,6 +4,10 @@ import Navbar from 'react-bootstrap/Navbar';
 
 export function NaviBar() {
     return (
+      <div className="nav-container">
+          <span className="menu material-icons">menu</span>
+          <header>FOR ALL THE MOODS</header>
+          <span className="profile material-icons">account_circle</span>
       <Navbar expand="lg" className="nav-container">
         <Container className='me-auto'>
           <Navbar.Collapse id="basic-navbar-nav">
@@ -18,6 +22,7 @@ export function NaviBar() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      </div>
     );
   }
   
