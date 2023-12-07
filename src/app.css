@@ -35,23 +35,13 @@ footer {
     padding: 10px;
 }
 
-.menu {
-    color: white;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 20px 30px;
-    font-size: 38px;
-    text-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
-}
-
-.profile {
+span.profile.material-icons {
     color: white;
     position: absolute;
     top: 10px; 
     right: 10px; 
     margin: 10px 25px;
-    font-size: 35px;
+    font-size: 40px;
     text-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
 }
 
