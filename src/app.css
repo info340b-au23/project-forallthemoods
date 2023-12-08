@@ -24,10 +24,6 @@ header{
     text-decoration: none;
 }
 
-.container-fluid {
-    flex-grow: 1;
-}
-
 footer {
     text-align: center;
     font-size: 20px;

@@ -15,7 +15,7 @@ import { Footer } from './Footer';
 function App(props) {
     
     return (
-        <div className='d-flex flex-column flex-fill'>
+        <div>
             <NaviBar />
                 <Routes>
                     <Route path='/' element={<HomePage />} />
@@ -25,7 +25,7 @@ function App(props) {
                     <Route path='/eg_mood' element={<EgmoodPage />} /> 
                     <Route path='/signup' element={<SignUpPage />} />
                 </Routes>
-             <Footer />
+            <Footer />
          </div>
     )
 }
