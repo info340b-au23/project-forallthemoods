@@ -140,7 +140,7 @@ h1, h2 {
     font-weight: 350;
     font-size: 15.5px;
     padding: .15rem;
-    letter-spacing: .1em;
+    letter-spacing: .05em;
 }
 
 .review-albumname {
@@ -480,6 +480,15 @@ section.image-container span.right:hover {
     border-radius: 10px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
 }
+
+.result-container {
+    flex: 0 0 175px;
+    background-color: white;
+    padding: .5rem .5rem .5rem .5rem;
+    margin: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23); 
+}
     
 #check {
     position: absolute;
@@ -501,8 +510,39 @@ section.image-container span.right:hover {
     letter-spacing: .10em;
     text-align: center;
 }
-    
 
+.playlist-result, .result-description {
+    justify-content: center;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: "Helvetica Neue";
+    text-shadow: 0.5px 0.5px grey;
+    font-size: 18px;
+  }
+
+.result-image {
+    display: block;
+    margin: 0 auto;
+    margin-right: 5rem;
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+    margin: 1rem auto 0;
+    border-radius: 8px;
+  }
+  
+.submit-quiz-button, .redo-quiz-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 35.5rem;
+  }
+
+  
 /* tika's mood and mood example page individual styling */
 
 /* Default Styling */

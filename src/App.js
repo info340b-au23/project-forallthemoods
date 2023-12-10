@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import './app.css';
 import { HomePage } from './Homepage';
 import { ReviewPage } from './Review';
@@ -26,8 +26,6 @@ function App(props) {
                     <Route path='/signup' element={<SignUpPage />} />
                     <Route path='/party' element={<PartyPage />} />
                     <Route path='/nostalgic' element={<NostalgicPage />} />
-                    <Route path='/heartbreak' element={<HeartbreakPage />} />
-                    <Route path='/club' element={<ClubPage />} />
                 </Routes>
             <Footer />
          </div>
