@@ -204,7 +204,7 @@ export function QuizPage() {
         </section>
   
         {isLastPage && !submitted ? (
-          <button className="submit-button" onClick={handleSubmit}>
+          <button className="submit-quiz-button" onClick={handleSubmit} disabled={userSelections.includes(null)}>
             Submit
           </button>
         ) : (
@@ -214,8 +214,8 @@ export function QuizPage() {
         )}
       </div>
     );
-  }; 
-        
+  };
+ 
   const renderResult = () => {
     let resultImage = '/img/defaultImage.png';
     let playlistDescription = '';
@@ -264,4 +264,3 @@ export function QuizPage() {
     </div>
   );
 }
-
