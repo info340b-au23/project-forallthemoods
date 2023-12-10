@@ -212,17 +212,23 @@ export function QuizPage() {
         
   const renderResult = () => {
     let resultImage = '/img/defaultImage.png';
-
+    let playlistDescription = '';
+  
     if (playlistResult === 'partyDrake') {
       resultImage = '/img/For_All_The_Dogs.jpg';
+      playlistDescription = 'The perfect playlist for a party vibe. Get ready to turn up with these upbeat tracks!';
     } else if (playlistResult === 'nostalgicDrake') {
       resultImage = '/img/nothingwasthesame.avif';
+      playlistDescription = 'Relive those nostalgic moments with Drake. These tracks will take you back in time!';
     } else if (playlistResult === 'heartbreakDrake') {
       resultImage = '/img/Take-Care.jpeg';
+      playlistDescription = 'Embrace the feels with this emotional playlist. Perfect for those heartbreak moments.';
     } else if (playlistResult === 'hittheclubDrake') {
       resultImage = '/img/views.jpg';
+      playlistDescription = 'Ready to hit the club? This playlist has all the bangers to keep you moving!';
     } else if (playlistResult === 'hypedDrake') {
       resultImage = '/img/her-loss.jpg';
+      playlistDescription = 'Get hyped up with this energetic playlist. It\'s time to turn the energy up!';
     }
 
     return (
@@ -233,6 +239,7 @@ export function QuizPage() {
           src={resultImage}
           alt="Result Album Cover"
         />
+        <p>{playlistDescription}</p>
         <p>{playlistResult}</p>
         <button className="redo-quiz-button" onClick={handleResetQuiz}>
           Redo Quiz
