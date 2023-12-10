@@ -18,7 +18,6 @@ export function NaviBar() {
               <Nav.Link href="/Quiz">QUIZ</Nav.Link>
               <Nav.Link href="/Review">REVIEW</Nav.Link>
               <Nav.Link href="/Mood">MOOD</Nav.Link>
-              <Nav.Link href="/Eg_mood">MOOD EXAMPLE</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -26,3 +25,5 @@ export function NaviBar() {
       </div>
     );
   }
+
+export default NaviBar;

@@ -532,7 +532,7 @@ p {
 }
 
 .modal-container {
-    display: block; /* or any other style you want to apply when showModal is true */
+    display: block; 
   }
 
 
