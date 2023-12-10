@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 
 export function QuizPage() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [userSelections, setUserSelections] = useState(Array(9).fill(null));
+  const [userSelections, setUserSelections] = useState(Array(7).fill(null));
   const [submitted, setSubmitted] = useState(false);
+  const [showResult, setShowResult] = useState(false);
+  const [playlistResult, setPlaylistResult] = useState('');
 
   const images = [
     '/img/nothingwasthesame.avif',
@@ -12,21 +14,7 @@ export function QuizPage() {
     '/img/more-life.jpg',
     '/img/scorpion.jpg',
     '/img/Take-Care.jpeg',
-    '/img/Thank-Me-Later.jpg',
     '/img/views.jpg',
-    '/img/clb.jpg',
-  ];
-
-  const albums = [
-    'Nothing Was the Same',
-    'For All The Dogs',
-    'Her Loss',
-    'More Life',
-    'Scorpion',
-    'Take Care',
-    'Thank Me Later',
-    'Views',
-    'Certified Lover Boy (CLB)',
   ];
 
   const questions = [
@@ -37,9 +25,89 @@ export function QuizPage() {
     ['Nonstop', 'Jaded', 'Nice For What', 'After Dark'],
     ['Marvins Room', 'The Motto', 'HYFR', 'Shot For Me'],
     ['Fireworks', 'Find Your Love', 'Miss Me', 'Show Me A Good Time'],
-    ['Feel No Ways', 'Child\'s Play', 'One Dance', 'Controlla'],
-    ['Race My Mind', 'Knife Talk', 'Fountains', 'IMY2'],
   ];
+
+  const partyDrakeSongs = [
+    'Wu-Tang Forever',
+    'Slime You Out',
+    'Hours In Silence',
+    'Do Not Disturb',
+    'Jaded',
+    'The Motto',
+    'Find Your Love',
+  ];
+
+  const nostalgicDrakeSongs = [
+    'From Time',
+    'IDGAF',
+    'Rich Flex',
+    'Teenage Fever',
+    'Nonstop',
+    'Marvins Room',
+    'Fireworks',
+  ];
+
+  const heartbreakDrakeSongs = [
+    'Hold On, We\'re Going Home',
+    'Rich Baby Daddy',
+    'BackOutsideBoyz',
+    'Passionfruit',
+    'Nice For What',
+    'HYFR',
+    'Miss Me',
+  ];
+
+  const hittheclubDrakeSongs = [
+    'Pound Cake / Paris Morton Music 2',
+    'Another Late Night',
+    'Treacherous Twin',
+    'Madiba Riddim',
+    'After Dark',
+    'Shot For Me',
+    'Show Me A Good Time',
+  ];
+
+  const hypedDrakeSongs = [
+    'Hold On, We\'re Going Home',
+    'Rich Baby Daddy',
+    'BackOutsideBoyz',
+    'Teenage Fever',
+    'Nonstop',
+    'HYFR',
+    'Show Me A Good Time',
+  ];
+
+  const playlists = [
+    { name: 'partyDrake', songs: partyDrakeSongs },
+    { name: 'nostalgicDrake', songs: nostalgicDrakeSongs },
+    { name: 'heartbreakDrake', songs: heartbreakDrakeSongs },
+    { name: 'hittheclubDrake', songs: hittheclubDrakeSongs },
+    { name: 'hypedDrake', songs: hypedDrakeSongs },
+  ];
+
+  const calculateScore = (selectedSongs, playlist) => {
+    return selectedSongs.reduce((score, song, index) => {
+      if (playlist.includes(song)) {
+        score += 1;
+      }
+      return score;
+    }, 0);
+  };
+
+  const calculatePlaylistResult = (selectedSongs) => {
+    let maxScore = 0;
+    let result = '';
+
+    playlists.forEach((playlist) => {
+      const score = calculateScore(selectedSongs, playlist.songs);
+      if (score > maxScore) {
+        maxScore = score;
+        result = playlist.name;
+      }
+    });
+
+    return result;
+  };
 
   const handlePrevClick = () => {
     setCurrentImageIndex((prevIndex) =>
@@ -60,9 +128,21 @@ export function QuizPage() {
   };
 
   const handleSubmit = () => {
-    // Handle the submitted data, for example, you can console.log it for now
-    console.log('User selections:', userSelections);
     setSubmitted(true);
+
+    const selectedSongs = userSelections.map((selection, index) => questions[index][selection]);
+    const playlistResult = calculatePlaylistResult(selectedSongs);
+
+    setShowResult(true);
+    setPlaylistResult(playlistResult);
+  };
+
+  const handleResetQuiz = () => {
+    setUserSelections(Array(7).fill(null));
+    setSubmitted(false);
+    setShowResult(false);
+    setCurrentImageIndex(0);
+    setPlaylistResult('');
   };
 
   const renderOptions = (albumIndex) => {
@@ -82,47 +162,93 @@ export function QuizPage() {
     ));
   };
 
-  const isLastPage = currentImageIndex === images.length - 1;
+  const renderQuiz = () => {
+    const isLastPage = currentImageIndex === images.length - 1;
+
+    return (
+      <div>
+        <h1 className="quiz-title">WHICH DRAKE PLAYLIST IS FOR YOU?</h1>
+        <h1 className="question-number">{`Question ${currentImageIndex + 1}/7`}</h1>
+
+        <section className="image-container">
+          {currentImageIndex !== 0 && (
+            <span className="left material-icons" onClick={handlePrevClick}>
+              chevron_left
+            </span>
+          )}
+          <img
+            className="drake-album"
+            src={images[currentImageIndex]}
+            alt="Album Cover"
+          />
+          {currentImageIndex !== images.length - 1 && (
+            <span className="right material-icons" onClick={handleNextClick}>
+              chevron_right
+            </span>
+          )}
+        </section>
+        <p className="quiz-caption">
+          Choose Your Favorite Song From Each Album To See Which Curated Playlist Is For You
+        </p>
+
+        <section className="quiz-container">
+          <div className="flex-container-quiz">
+            {renderOptions(currentImageIndex)}
+          </div>
+        </section>
+        
+        {isLastPage && !submitted ? (
+          <button className="submit-button-bottom-right" onClick={handleSubmit}>
+            Submit
+          </button>
+        ) : (
+          submitted && !showResult ? (
+            <p>Quiz Submitted!</p>
+          ) : null
+        )}
+      </div>
+    );
+  }; 
+        
+  const renderResult = () => {
+    let resultImage = '/img/defaultImage.png';
+
+    if (playlistResult === 'partyDrake') {
+      resultImage = '/img/For_All_The_Dogs.jpg';
+    } else if (playlistResult === 'nostalgicDrake') {
+      resultImage = '/img/nothingwasthesame.avif';
+    } else if (playlistResult === 'heartbreakDrake') {
+      resultImage = '/img/Take-Care.jpeg';
+    } else if (playlistResult === 'hittheclubDrake') {
+      resultImage = '/img/views.jpg';
+    } else if (playlistResult === 'hypedDrake') {
+      resultImage = '/img/her-loss.jpg';
+    }
+
+    return (
+      <div>
+        <h1>Your Drake Playlist:</h1>
+        <img
+          className="result-image"
+          src={resultImage}
+          alt="Result Album Cover"
+        />
+        <p>{playlistResult}</p>
+        <button className="redo-quiz-button-bottom-right" onClick={handleResetQuiz}>
+          Redo Quiz
+        </button>
+      </div>
+    );
+  };
 
   return (
     <div>
       <main>
         <div className="review-container">
-          <h1 className="quiz-title">WHICH DRAKE PLAYLIST IS FOR YOU?</h1>
-          <h1 className="question-number">{`Question ${currentImageIndex + 1}/9`}</h1>
-
-          <section className="image-container">
-            <span className="left material-icons" onClick={handlePrevClick}>
-              chevron_left
-            </span>
-            <img
-              className="drake-album"
-              src={images[currentImageIndex]}
-              alt="Album Cover"
-            />
-            <span className="right material-icons" onClick={handleNextClick}>
-              chevron_right
-            </span>
-          </section>
-          <p className="quiz-caption">
-            Choose Your Favorite Song From Each Album To See Which Curated Playlist Is For You
-          </p>
-
-          <section className="quiz-container">
-            <div className="flex-container-quiz">
-              {renderOptions(currentImageIndex)}
-            </div>
-          </section>
-
-          {isLastPage && !submitted ? (
-            <button className="submit-button" onClick={handleSubmit}>
-              Submit
-            </button>
-          ) : (
-            submitted && <p>Quiz Submitted!</p>
-          )}
+          {showResult ? renderResult() : renderQuiz()}
         </div>
       </main>
     </div>
   );
 }
+
