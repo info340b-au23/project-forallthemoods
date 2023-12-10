@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export function ReviewPage() {
+export function ReviewPage(prop) {
   let [currentImageIndex, setCurrentImageIndex] = useState(0);
   let [reviewText, setReviewText] = useState('');
   let [userRating, setUserRating] = useState(0);

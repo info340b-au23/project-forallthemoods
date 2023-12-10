@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import './app.css';
 import { HomePage } from './Homepage';
 import { ReviewPage } from './Review';
@@ -24,6 +24,7 @@ function App(props) {
                     <Route path='/mood' element={<MoodPage />} />
                     <Route path='/eg_mood' element={<EgmoodPage />} /> 
                     <Route path='/signup' element={<SignUpPage />} />
+                    <Route path='*' element={<Navigate to='/' />} />
                 </Routes>
             <Footer />
          </div>
