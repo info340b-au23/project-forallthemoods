@@ -198,7 +198,7 @@ export function QuizPage() {
         </section>
         
         {isLastPage && !submitted ? (
-          <button className="submit-button-bottom-right" onClick={handleSubmit}>
+          <button className="submit-button" onClick={handleSubmit}>
             Submit
           </button>
         ) : (
@@ -234,7 +234,7 @@ export function QuizPage() {
           alt="Result Album Cover"
         />
         <p>{playlistResult}</p>
-        <button className="redo-quiz-button-bottom-right" onClick={handleResetQuiz}>
+        <button className="redo-quiz-button" onClick={handleResetQuiz}>
           Redo Quiz
         </button>
       </div>
