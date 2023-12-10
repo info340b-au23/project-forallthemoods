@@ -19,7 +19,11 @@ export function HomePage() {
   };
 
   const handleSubmit = () => {
-    navigate(`/${selectedMood}`);
+    if (selectedMood && ['party', 'nostalgic', 'heartbreak', 'club', 'hyped', 'combination'].includes(selectedMood)) {
+      navigate(`/${selectedMood}`);
+    } else {
+      console.error('Invalid or null selected mood');
+    }
   };
 
   return (
@@ -29,7 +33,7 @@ export function HomePage() {
           
 
           <button className="mood-button" onClick={handleShowModal}>
-            Choose Your Mood
+            CHOOSE YOUR MOOD
           </button>
 
           {showModal && (
@@ -41,6 +45,7 @@ export function HomePage() {
                   MOOD:
                 </label>
                 <select id="mood" name="mood" onChange={handleMoodChange} value={selectedMood || ''}>
+                  <option value="null">Choose a Drake</option>
                   <option value="party">Party Drake</option>
                   <option value="nostalgic">Nostalgic Drake</option>
                   <option value="heartbreak">Heartbreak Drake</option>

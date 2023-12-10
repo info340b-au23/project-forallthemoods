@@ -4,17 +4,17 @@ import 'material-icons/iconfont/material-icons.css';
 import './app.css';
 
 
-export function NostalgicPage () {
+export function HeartbreakPage () {
   return (
-    <div className="nostalgic-background">
+    <div className="heartbreak-background">
       <main className="mood-page">
         <button className="mood-button">
-          <Link to='/nostalgic' className="button-link">
-            NOSTALGIC DRAKE
+          <Link to='/heartbreak' className="button-link">
+            HEARTBREAK DRAKE
           </Link>
         </button>
-        <a className="spotify-button button-link" href="https://open.spotify.com/playlist/6BJML8R0wnLpkcvLIe7nK6?si=f02e740c0be348f2" target="_blank" rel="noopener noreferrer">
-          NOSTALGIC PLAYLIST
+        <a className="spotify-button button-link" href="https://open.spotify.com/playlist/2lDwK6wAeyPCoPbdh9fFbU?si=131c115987da44c8" target="_blank" rel="noopener noreferrer">
+          HEARTBREAK PLAYLIST
         </a>
         <a className="merch-button button-link" href="https://us.octobersveryown.com/" target="_blank" rel="noopener noreferrer">
           MERCH
@@ -34,4 +34,4 @@ export function NostalgicPage () {
   );
 };
 
-export default NostalgicPage;
+export default HeartbreakPage;

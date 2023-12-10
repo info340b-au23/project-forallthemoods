@@ -17,7 +17,6 @@ export function NaviBar() {
               <Nav.Link href="/">HOME</Nav.Link>
               <Nav.Link href="/Quiz">QUIZ</Nav.Link>
               <Nav.Link href="/Review">REVIEW</Nav.Link>
-              <Nav.Link href="/Mood">MOOD</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

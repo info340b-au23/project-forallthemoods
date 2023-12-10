@@ -3,18 +3,19 @@ import { Link } from 'react-router-dom';
 import 'material-icons/iconfont/material-icons.css';
 import './app.css';
 
-import Navibar from './Nav';
 
 export function PartyPage () {
   return (
-    <div>
-      <Navibar />
+    <div className="party-background">
       <main className="mood-page">
         <button className="mood-button">
           <Link to='/party' className="button-link">
-            PARTY Drake
+            PARTY DRAKE
           </Link>
         </button>
+        <a className="spotify-button button-link" href="https://open.spotify.com/playlist/7AGbCCR3Kqy24uHyu6CMZB?si=32755969fa70412c" target="_blank" rel="noopener noreferrer">
+          PARTY PLAYLIST
+        </a>
         <a className="merch-button button-link" href="https://us.octobersveryown.com/" target="_blank" rel="noopener noreferrer">
           MERCH
         </a>
