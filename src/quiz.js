@@ -243,7 +243,7 @@ export function QuizPage() {
         <img
           className="result-image"
           src={resultImage}
-          alt="Result Image"
+          alt="Result of Persona"
         />
         <h2 className="playlist-result">{playlistResult}</h2>
         <p className="result-description">{playlistDescription}</p>
