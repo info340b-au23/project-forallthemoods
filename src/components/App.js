@@ -13,6 +13,7 @@ import { HeartbreakPage } from './Heartbreak';
 import { ClubPage } from './Club';
 import { HypedPage } from './Hyped';
 import { CombinationPage } from './Combination';
+import { MoodPage } from './Mood';
 
 
 function App(props) {
@@ -22,6 +23,7 @@ function App(props) {
             <NaviBar />
                 <Routes>
                     <Route path='/' element={<HomePage />} />
+                    <Route path='/mood' element={<MoodPage />} />
                     <Route path='/quiz' element={<QuizPage />} />
                     <Route path='/review' element={<ReviewPage />} />
                     <Route path='/signup' element={<SignUpPage />} />
