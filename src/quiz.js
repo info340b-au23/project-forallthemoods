@@ -194,7 +194,7 @@ export function QuizPage() {
         </section>
   
         <p className="quiz-caption">
-          Choose Your Favorite Song From Each Album To See Which Persona Is For You
+          Choose Your Favorite Song From Each Album To See Which Persona You Are
         </p>
   
         <section className="quiz-container">
