@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { Form, Button } from 'react-bootstrap';
 
 export function ReviewPage(prop) {
-  let [currentImageIndex, setCurrentImageIndex] = useState(0);
-  let [reviewText, setReviewText] = useState('');
-  let [userRating, setUserRating] = useState(0);
-  let [submissionMessage, setSubmissionMessage] = useState('');
-  let [reviews, setReviews] = useState([]);
-  let [showOtherReviews, setShowOtherReviews] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [reviewText, setReviewText] = useState('');
+  const [userRating, setUserRating] = useState(0);
+  const [submissionMessage, setSubmissionMessage] = useState('');
+  const [reviews, setReviews] = useState([]);
+  const [showOtherReviews, setShowOtherReviews] = useState(false);
 
-  let images = [
+  const images = [
     '/img/nothingwasthesame.avif',
     '/img/For_All_The_Dogs.jpg',
     '/img/her-loss.jpg',
@@ -21,7 +21,7 @@ export function ReviewPage(prop) {
     '/img/clb.jpg',
   ];
 
-  let captions = [
+  const captions = [
     'Nothing Was The Same',
     'For All The Dogs',
     'Her Loss',
@@ -33,7 +33,7 @@ export function ReviewPage(prop) {
     'CLB',
   ];
 
-  let handlePrevClick = () => {
+  const handlePrevClick = () => {
     setCurrentImageIndex((prevIndex) =>
       prevIndex > 0 ? prevIndex - 1 : images.length - 1
     );
@@ -41,7 +41,7 @@ export function ReviewPage(prop) {
     setShowOtherReviews(false);
   };
 
-  let handleNextClick = () => {
+  const handleNextClick = () => {
     setCurrentImageIndex((prevIndex) =>
       prevIndex < images.length - 1 ? prevIndex + 1 : 0
     );
@@ -55,17 +55,17 @@ export function ReviewPage(prop) {
     setShowOtherReviews(false);
   }, [currentImageIndex]);
 
-  let handleRatingClick = (rating) => {
+  const handleRatingClick = (rating) => {
     setUserRating(rating);
   };
 
-  let handleReviewSubmit = () => {
+  const handleReviewSubmit = () => {
     if (!reviewText || userRating === 0) {
       setSubmissionMessage('PLEASE FILL OUT BOTH THE REVIEW AND RATING.');
       return;
     }
 
-    let newReview = {
+    const newReview = {
       imageIndex: currentImageIndex,
       caption: captions[currentImageIndex],
       reviewText,
@@ -85,12 +85,12 @@ export function ReviewPage(prop) {
     }, 7000);
   };
 
-  let resetReviewAndRating = () => {
+  const resetReviewAndRating = () => {
     setReviewText('');
     setUserRating(0);
   };
 
-  let currentImageReviews = reviews.filter(
+  const currentImageReviews = reviews.filter(
     (review) => review.imageIndex === currentImageIndex
   );
 
