@@ -230,7 +230,11 @@ form input {
     text-align: center;
     font-size: 15px; 
     font-family: "Helvetica Neue";
-    padding-left: 300px;
+}
+
+.dropdown{
+    padding-left: 282px;
+    padding-bottom: 30px;
 }
 
 .btn-primary {
