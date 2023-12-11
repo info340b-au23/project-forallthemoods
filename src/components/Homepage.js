@@ -7,6 +7,7 @@ export function HomePage() {
   const [showModal, setShowModal] = useState(false);
   const navigate = useNavigate();
 
+  // Function to handle mood selection 
   const handleMoodChange = (selectedValue) => {
     setSelectedMood(selectedValue);
     navigate(`/${selectedValue}`);
@@ -33,7 +34,7 @@ export function HomePage() {
             <div className="modal">
               <h1 className="select-title">SELECT YOUR MOOD</h1>
               <p className="select-notice">SELECT YOUR MOOD AND LISTEN TO A PLAYLIST CURATED FOR YOUR MOOD.</p>
-              <Dropdown as={ButtonGroup} onSelect={handleMoodChange}>
+              <Dropdown as={ButtonGroup} onSelect={handleMoodChange}> 
                 <Dropdown.Toggle variant="primary" className="dropdown-basic">
                   SELECT
                 </Dropdown.Toggle>
