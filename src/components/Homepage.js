@@ -1,57 +1,13 @@
-import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { Dropdown, ButtonGroup } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 export function HomePage() {
-  const [selectedMood, setSelectedMood] = useState(null);
-  const [showModal, setShowModal] = useState(false);
-  const navigate = useNavigate();
-
-  const handleMoodChange = (selectedMood) => {
-    setSelectedMood(selectedMood);
-    navigate(`/${selectedMood}`);
-    handleCloseModal();
-  };
-
-  const handleShowModal = () => {
-    setShowModal(true);
-  };
-
-  const handleCloseModal = () => {
-    setShowModal(false);
-  };
-
   return (
     <div>
       <main>
-        <div className={`selector-container ${showModal ? 'modal-container' : ''}`}>
-          {showModal && (
-            <div className="modal-container">
-              <span className="close material-icons" onClick={handleCloseModal}>
-                close
-              </span>
-              <h1 className="select-title">SELECT YOUR MOOD</h1>
-              <p className="select-notice">SELECT YOUR MOOD AND LISTEN TO A PLAYLIST CURATED FOR YOUR MOOD.</p>
-              <Dropdown as={ButtonGroup} onSelect={handleMoodChange} className="mx-auto">
-                <Dropdown.Toggle variant="primary" className="dropdown-basic">
-                  SELECT
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu>
-                  <Dropdown.Item eventKey="party">Party Drake</Dropdown.Item>
-                  <Dropdown.Item eventKey="nostalgic">Nostalgic Drake</Dropdown.Item>
-                  <Dropdown.Item eventKey="heartbreak">Heartbreak Drake</Dropdown.Item>
-                  <Dropdown.Item eventKey="club">Hit the Club Drake</Dropdown.Item>
-                  <Dropdown.Item eventKey="hyped">Hyped Drake</Dropdown.Item>
-                  <Dropdown.Item eventKey="combination">Combination Drake</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-            </div>
-          )}
-        </div>
-        <div className='tester'>
-            <button className="mood-button" onClick={handleShowModal}>
-              CHOOSE YOUR MOOD
+            <button className="mood-button">
+              <Link to="/mood" className="button-link">
+                CHOOSE YOUR MOOD
+              </Link>
             </button>
             <a className="merch-button button-link" href="https://us.octobersveryown.com/" target="_blank" rel="noopener noreferrer">
               MERCH
@@ -66,7 +22,6 @@ export function HomePage() {
                 REVIEW/RATE
               </Link>
             </button>
-          </div>
       </main>
     </div>
   );
