@@ -703,7 +703,7 @@ section.image-container span.right:hover {
     }
 
     /* overall container adjustments */
-    .review-container, .signin-container, .confirmation-container {
+    .review-container, .signin-container, .selector-container, .confirmation-container{
         display: flex;
         box-sizing: border-box;
         flex-direction: column;
@@ -714,22 +714,6 @@ section.image-container span.right:hover {
         border-radius: 10px;
         box-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
     }
-
-    .selector-container {
-        display: flex;
-        box-sizing: border-box;
-        flex-direction: column;
-        justify-content: center;
-        width: 350px;
-        background-color: #FAF9F6;
-        margin: 3.5rem auto;
-        border-radius: 10px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.16), 0 5px 15px rgba(0, 0, 0, 0.23);
-        position: absolute;
-        top: 30%;
-        left: 6%;
-    }
-
 
     /* home and mood page button adjustments */
     .mood-button {
