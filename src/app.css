@@ -207,7 +207,7 @@ form input {
     margin-bottom: 15px;
 }
 
-.submit {
+.submit, .dropdown-basic {
     background-color: rgb(113, 201, 255); 
     color: black; 
     font-size: 15px; 
@@ -220,12 +220,11 @@ form input {
     width: 108%;
 }
 
-/* Dropdown styling */ 
-.dropdown-basic{
-    text-align: center;
-    font-size: 15px; 
-    font-family: "Helvetica Neue";
+.dropdown-basic {
+    padding: 3px 7px; 
 }
+
+/* Dropdown styling */ 
 
 .dropdown {
     text-align: center;
