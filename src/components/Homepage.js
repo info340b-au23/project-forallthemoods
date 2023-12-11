@@ -53,7 +53,6 @@ export function HomePage() {
             </div>
           )}
         </div>
-        <div className='modal-container'>
           <a className="merch-button button-link" href="https://us.octobersveryown.com/" target="_blank" rel="noopener noreferrer">
             MERCH
           </a>
@@ -67,7 +66,6 @@ export function HomePage() {
               REVIEW/RATE
             </Link>
           </button>
-        </div>
       </main>
     </div>
   );
