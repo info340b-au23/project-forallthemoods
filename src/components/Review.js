@@ -126,7 +126,7 @@ export function ReviewPage(prop) {
                   placeholder="Write your review here..."
                 />
               </div>
-              <Button  className="submit-review" variant="primary" onClick={handleReviewSubmit}>
+              <Button className="submit-review" variant="primary" onClick={handleReviewSubmit}>
                 Submit
               </Button>
               {submissionMessage && (
