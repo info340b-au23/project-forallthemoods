@@ -226,6 +226,37 @@ form input {
     width: 108%;
 }
 
+.dropdown-basic{
+    text-align: center;
+    font-size: 15px; 
+    font-family: "Helvetica Neue";
+    padding-left: 300px;
+}
+
+.btn-primary {
+    border-color: black;
+  }
+  
+.dropdown-menu {
+    background-color: #f8f9fa; /* Background color */
+    border: 1px solid #ced4da; /* Border color */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Optional: Add a box shadow for a lifted appearance */
+    display: flex;
+    flex-direction: column; /* Display options in a column */
+  }
+  
+  .dropdown-item {
+    color: #000; /* Text color */
+    padding: 0.5rem 1rem; /* Padding */
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+  }
+  
+  .dropdown-item:hover {
+    background-color: #007bff; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+  }
+  
+  
 /* mood page option selector */
 
 .selector {
@@ -250,7 +281,7 @@ select {
 
 /* sign-in and mood page headers */
 
-.subscribe, .modal-title {
+.subscribe, .select-title {
     font-size: 20px;
     text-align: center; 
     padding-top: 1rem;
@@ -610,7 +641,7 @@ section.image-container span.right:hover {
 
 .modal-footer{
     padding-left: 250px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .button-container {
