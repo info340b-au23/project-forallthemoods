@@ -239,7 +239,7 @@ export function QuizPage() {
 
     return (
       <div>
-        <h1 className="quiz-title">Your Drake Persona:</h1>
+        <h1 className="quiz-title">YOUR DRAKE PERSONA:</h1>
         <img
           className="result-image"
           src={resultImage}
