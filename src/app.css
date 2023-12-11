@@ -833,8 +833,8 @@ section.image-container span.right:hover {
     .party-background {
         background-image: url("../public/img/bgs/bg_party_mobile.jpg");
         background-size: cover;
+        height: 100vh;
     }
-
     .heartbreak-background {
         background-image: url("../public/img/bgs/bg_hb_mobile.jpg");
         background-size: cover;
