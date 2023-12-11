@@ -22,8 +22,7 @@ header{
     padding: 1.5rem;
     padding-bottom: .5rem;
     text-decoration: none;
-    position: fixed;
-    top: 0;
+    position: relative;
     width: 100%;
 }
 
@@ -664,7 +663,6 @@ section.image-container span.right:hover {
 
 .modal-container {
     display: block; 
-    z-index: 3;
   }
 
 
