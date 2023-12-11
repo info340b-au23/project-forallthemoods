@@ -32,6 +32,7 @@ function App(props) {
                     <Route path='/club' element={<ClubPage />} />
                     <Route path='/hyped' element={<HypedPage />} />
                     <Route path='/combination' element={<CombinationPage />} />
+                    <Route path='*' element={<Navigate to="/" />} />
                 </Routes>
             <Footer />
          </div>
