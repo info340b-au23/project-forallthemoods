@@ -15,7 +15,6 @@ export function NaviBar() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="nav">
               <Nav.Link href="/">HOME</Nav.Link>
-              <Nav.Link href="/Mood">MOOD</Nav.Link>
               <Nav.Link href="/Quiz">QUIZ</Nav.Link>
               <Nav.Link href="/Review">REVIEW</Nav.Link>
             </Nav>
