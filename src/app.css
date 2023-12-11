@@ -85,7 +85,7 @@ h1, h2 {
     justify-content: center;
     width: 650px;
     background-color: #FAF9F6;
-    margin: 4.4rem auto;
+    margin: 5rem auto;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
 }
@@ -534,7 +534,7 @@ section.image-container span.right:hover {
     margin-left: 1rem;
 }
   
-.flex-container-quiz>div {
+.flex-container-quiz {
     flex: 0 0 175px;
     background-color: white;
     padding: .2rem;
@@ -710,7 +710,7 @@ section.image-container span.right:hover {
         justify-content: center;
         width: 350px;
         background-color: #FAF9F6;
-        margin: 3.5rem auto;
+        margin: 5rem auto;
         border-radius: 10px;
         box-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
     }
