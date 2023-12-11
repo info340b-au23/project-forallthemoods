@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Form, Button } from 'react-bootstrap';
 
 export function ReviewPage(prop) {
   let [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -116,17 +117,18 @@ export function ReviewPage(prop) {
             <section className="review">
               <h1>WRITE A REVIEW:</h1>
               <div className="review-inputfield">
-                <textarea
+                <Form.Control
+                  as="textarea"
                   id="review-text"
                   value={reviewText}
                   onChange={(e) => setReviewText(e.target.value)}
                   rows="4"
-                  cols="75"
-                ></textarea>
+                  placeholder="Write your review here..."
+                />
               </div>
-              <button className="submit-review" onClick={handleReviewSubmit}>
+              <Button  className="submit-review" variant="primary" onClick={handleReviewSubmit}>
                 Submit
-              </button>
+              </Button>
               {submissionMessage && (
                 <p className={`submission-message ${submissionMessage.trim() && 'error'}`}>
                   {submissionMessage}
@@ -151,6 +153,7 @@ export function ReviewPage(prop) {
               ))}
             </section>
           </div>
+
           {showOtherReviews && (
             <div className='other-reviews'>
               <h2>OTHER REVIEWS:</h2>

@@ -135,6 +135,14 @@ h1, h2 {
     border-radius: 10px;
 }
 
+textarea#review-text.form-control {
+    resize: none; 
+    outline: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 610px ;
+}
+
 .review-list {
     font-family: "Helvetica Neue";
     font-weight: 350;
@@ -915,12 +923,12 @@ p {
     }
 
     /* user input field for review adjustments */
-    .review-inputfield textarea {
+    textarea#review-text.form-control {
         resize: none; 
         outline: none;
         border: 1px solid white;
         border-radius: 10px;
-        width: 100%;
+        max-width: 100%;
     }
 
     /* quiz page mobile adjusments */
