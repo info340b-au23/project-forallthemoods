@@ -7,7 +7,7 @@ export function PartyPage () {
     <div className="party-background">
       <main className="mood-page">
         <button className="mood-button">
-          <Link to='/party' className="button-link">
+          <Link to='/Homepage' className="button-link">
             PARTY DRAKE
           </Link>
         </button>

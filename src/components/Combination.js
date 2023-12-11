@@ -7,7 +7,7 @@ export function CombinationPage () {
     <div className="combination-background">
       <main className="mood-page">
         <button className="mood-button">
-          <Link to='/combination' className="button-link">
+          <Link to='/Homepage' className="button-link">
             COMBINATION DRAKE
           </Link>
         </button>
