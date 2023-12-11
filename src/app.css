@@ -19,9 +19,12 @@ header{
     color: white;
     text-align: center;
     font-size: 35px;
-    padding: 1rem;
+    padding: 1.5rem;
     padding-bottom: .5rem;
     text-decoration: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 footer {
@@ -36,7 +39,7 @@ footer {
 span.profile.material-icons {
     color: white;
     position: absolute;
-    top: 10px; 
+    top: 20px; 
     right: 10px; 
     margin: 10px 25px;
     font-size: 40px;
@@ -56,19 +59,22 @@ h1, h2 {
 .nav-container {
     backdrop-filter: blur(10px);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 .nav-container a {
     text-decoration: none;
     color: white;
-    font-size: 13px;
+    font-size: 12px;
     text-shadow: 2px 2px 2px grey;
     font-family: "Helvetica Neue";
     letter-spacing: .1em;
-    padding: .5rem 1rem;
+    padding: .5rem 3rem;
 }
 
 /* overall container styling for review/rate, sign-in, and mood pages */
@@ -80,7 +86,7 @@ h1, h2 {
     justify-content: center;
     width: 650px;
     background-color: #FAF9F6;
-    margin: 2rem auto;
+    margin: 4.4rem auto;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
 }
@@ -534,8 +540,8 @@ section.image-container span.right:hover {
 .flex-container-quiz>div {
     flex: 0 0 175px;
     background-color: white;
-    padding: .5rem .5rem .5rem .5rem;
-    margin: 1rem;
+    padding: .2rem;
+    margin: .2rem;
     border-radius: 10px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
 }
@@ -678,10 +684,10 @@ section.image-container span.right:hover {
     span.profile.material-icons {
         color: white;
         position: absolute;
-        top: 15px; 
+        top: 20px; 
         right: 10px; 
         margin: 8px 10px;
-        font-size: 35px;
+        font-size: 25px;
         text-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
     }
 
@@ -692,6 +698,14 @@ section.image-container span.right:hover {
         padding: 10px;
     }
 
+    header {
+        position: fixed;
+        top: 0;
+        font-size: 25px;
+        width: 70%;
+        margin-bottom: 20;
+    }
+
     /* overall container adjustments */
     .review-container, .signin-container, .selector-container, .confirmation-container{
         display: flex;
@@ -700,13 +714,13 @@ section.image-container span.right:hover {
         justify-content: center;
         width: 350px;
         background-color: #FAF9F6;
-        margin: 2rem auto;
+        margin: 3.5rem auto;
         border-radius: 10px;
         box-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
     }
 
     /* home and mood page button adjustments */
-    .mood-button, .heart-button {
+    .mood-button {
         font-family: "Helvetica Neue";
         font-weight: bold;
         font-size: 8px;
@@ -741,7 +755,7 @@ section.image-container span.right:hover {
         outline: none;
         position: absolute;
         left: 43px;
-        top: 370px;
+        top: 390px;
     }
     
     .quiz-button {
@@ -816,8 +830,8 @@ section.image-container span.right:hover {
         border-radius: 16px;
         outline: none;
         position: absolute;
-        left: 43px;
-        top: 370px;
+        left: 89px;
+        top: 355px;
     }
 
     .mood-button .button-link, 
@@ -830,6 +844,24 @@ section.image-container span.right:hover {
     font-size: 8px;
     text-shadow: none;
     letter-spacing: normal;
+    }
+
+    /* nav adjustments so it fits each bg */
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav-container a {
+        text-decoration: none;
+        color: white;
+        font-size: 10px;
+        text-shadow: 2px 2px 2px grey;
+        font-family: "Helvetica Neue";
+        letter-spacing: .1em;
+        padding: .5rem 1rem;
     }
     
     /* mood background mobile example change for eg_mood page */
@@ -960,10 +992,10 @@ section.image-container span.right:hover {
     
     .flex-container-quiz>div {
         font-size: 14px;
-        flex: 0 0 175px;
+        flex: 0 0 90px;
         background-color: white;
-        padding: .5rem .5rem .5rem .5rem;
-        margin: 1rem;
+        padding: .1rem;
+        margin: .2rem;
         border-radius: 10px;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
     }
