@@ -86,9 +86,6 @@ h1, h2 {
     box-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
 }
 
-.selector-container {
-    z-index: 2;
-}
 
 /* review and rate page inner containers styling */
 
