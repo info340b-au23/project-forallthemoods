@@ -429,10 +429,29 @@ section.image-container span.right:hover {
     outline: none;
     position: absolute;
     left: 680px;
-    top: 400px;
+    top: 500px;
 }
 
-.quiz-button:hover, .review-button:hover, .merch-button:hover, .mood-button:hover, .heart-button:hover{
+.spotify-button {
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #FAF9F6;
+    border: 3.5px solid black;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 16px;
+    outline: none;
+    position: absolute;
+    left: 500px;
+    top: 350px;
+}
+
+.quiz-button:hover, .review-button:hover, .merch-button:hover, .mood-button:hover, .spotify-button:hover{
     background-color: #000;
     color: #FFF;
 }
@@ -443,7 +462,6 @@ section.image-container span.right:hover {
     background-color: #000;
     color: #FFF;
 }
-
 /* jaydens quiz page container individual styling */
   
 .flex-container-quiz {
@@ -510,14 +528,14 @@ section.image-container span.right:hover {
     display: block;
     margin: 0 auto;
     margin-right: 5rem;
-    max-width: 100%;
+    max-width: 300%;
     height: auto;
-    max-height: 200px;
+    max-height: 300px;
     margin: 1rem auto 0;
     border-radius: 8px;
   }
   
-.submit-quiz-button, .redo-quiz-button {
+.submit-quiz-button {
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 10px;
@@ -525,7 +543,18 @@ section.image-container span.right:hover {
     color: white;
     font-size: 16px;
     cursor: pointer;
-    margin-left: 35.5rem;
+    margin-left: 18.2rem;
+  }
+
+.redo-quiz-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 17.5rem;
   }
 
   
@@ -543,8 +572,38 @@ p {
 
 /* mood background example change for eg_mood page */
 
-.sad-background {
+.nostalgic-background {
 	background-image: url("../public/img/bgs/bg-nost.jpg");
+	background-size: cover;
+    height: 100vh;
+}
+
+.party-background {
+	background-image: url("../public/img/bgs/bg_party.jpg");
+	background-size: cover;
+    height: 100vh;
+}
+
+.heartbreak-background {
+	background-image: url("../public/img/bgs/bg_hb.jpg");
+	background-size: cover;
+    height: 100vh;
+}
+
+.club-background {
+	background-image: url("../public/img/bgs/bg_club.jpg");
+	background-size: cover;
+    height: 100vh;
+}
+
+.hyped-background {
+	background-image: url("../public/img/bgs/bg_hype.jpg");
+	background-size: cover;
+    height: 100vh;
+}
+
+.combination-background {
+	background-image: url("../public/img/bgs/bg_comb.jpg");
 	background-size: cover;
     height: 100vh;
 }
@@ -658,7 +717,7 @@ p {
         left: 43px;
         top: 370px;
     }
-
+    
     .quiz-button {
         font-family: "Helvetica Neue";
         font-weight: bold;
@@ -716,6 +775,25 @@ p {
         top: 326px;
     }
 
+    .spotify-button {
+        font-family: "Helvetica Neue";
+        font-weight: bold;
+        font-size: 8px;
+        background-color: #FAF9F6;
+        border: 2.5px solid black;
+        color: black;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 16px;
+        outline: none;
+        position: absolute;
+        left: 43px;
+        top: 370px;
+    }
+
     .mood-button .button-link, 
     .quiz-button .button-link, 
     .review-button .button-link {
@@ -729,9 +807,38 @@ p {
     }
     
     /* mood background mobile example change for eg_mood page */
-    .sad-background {
+    .nostalgic-background {
         background-image: url("../public/img/bgs/bg_nost_mobile.jpg");
         background-size: cover;
+    }
+
+    .party-background {
+        background-image: url("../public/img/bgs/bg_party_mobile.jpg");
+        background-size: cover;
+    }
+
+    .heartbreak-background {
+        background-image: url("../public/img/bgs/bg_hb_mobile.jpg");
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .club-background {
+        background-image: url("../public/img/bgs/bg_club_mobile.jpg");
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .hyped-background {
+        background-image: url("../public/img/bgs/bg_hype_mobile.jpg");
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .combination-background {
+        background-image: url("../public/img/bgs/bg_comb_mobile.jpg");
+        background-size: cover;
+        height: 100vh;
     }
 
     /* sign-up page adjustments */

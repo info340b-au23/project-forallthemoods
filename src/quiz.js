@@ -194,7 +194,7 @@ export function QuizPage() {
         </section>
   
         <p className="quiz-caption">
-          Choose Your Favorite Song From Each Album To See Which Persona Is For You
+          Choose Your Favorite Song From Each Album To See Which Persona You Are
         </p>
   
         <section className="quiz-container">
@@ -239,11 +239,11 @@ export function QuizPage() {
 
     return (
       <div>
-        <h1 className="quiz-title">Your Drake Persona:</h1>
+        <h1 className="quiz-title">YOUR DRAKE PERSONA:</h1>
         <img
           className="result-image"
           src={resultImage}
-          alt="Result Image"
+          alt="Result of Persona"
         />
         <h2 className="playlist-result">{playlistResult}</h2>
         <p className="result-description">{playlistDescription}</p>
