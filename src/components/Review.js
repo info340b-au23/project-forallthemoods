@@ -6,6 +6,7 @@ export function ReviewPage(prop) {
   const [reviewText, setReviewText] = useState('');
   const [userRating, setUserRating] = useState(0);
   const [submissionMessage, setSubmissionMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState(true);
   const [reviews, setReviews] = useState([]);
   const [showOtherReviews, setShowOtherReviews] = useState(false);
 
@@ -61,7 +62,8 @@ export function ReviewPage(prop) {
 
   const handleReviewSubmit = () => {
     if (!reviewText || userRating === 0) {
-      setSubmissionMessage('PLEASE FILL OUT BOTH THE REVIEW AND RATING.');
+      setErrorMessage('PLEASE FILL OUT BOTH THE REVIEW AND RATING.');
+      setSubmissionMessage('');
       return;
     }
 
@@ -75,6 +77,7 @@ export function ReviewPage(prop) {
     setReviews((prevReviews) => [...prevReviews, newReview]);
 
     setSubmissionMessage('REVIEW AND RATE SUBMITTED!');
+    setErrorMessage('');
     resetReviewAndRating();
     setReviewText('');
     setUserRating(0);
@@ -129,8 +132,13 @@ export function ReviewPage(prop) {
               <Button className="submit-review" variant="primary" onClick={handleReviewSubmit}>
                 Submit
               </Button>
+              {errorMessage && (
+                <p className="error-message">
+                  {errorMessage}
+                </p>
+              )}
               {submissionMessage && (
-                <p className={`submission-message ${submissionMessage.trim() && 'error'}`}>
+                <p className="submission-message">
                   {submissionMessage}
                 </p>
               )}

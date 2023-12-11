@@ -131,13 +131,6 @@ h1, h2 {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
 }
 
-.review-inputfield textarea {
-    resize: none; 
-    outline: none;
-    border: 1px solid white;
-    border-radius: 10px;
-}
-
 textarea#review-text.form-control {
     resize: none; 
     outline: none;
@@ -164,18 +157,26 @@ textarea#review-text.form-control {
 p.submission-message {
     font-family:  "Helvetica Neue";
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 450;
     font-style: italic;
     text-align: center;
     margin-left: .5rem;
     margin-top: .2rem;
+    margin-bottom: .2rem;
     color: rgb(8, 123, 8);
 }
 
-.error{
+p.error-message{
+    font-family:  "Helvetica Neue";
+    font-size: 16px;
+    font-weight: 450;
+    font-style: italic;
+    text-align: center;
+    margin-left: .5rem;
+    margin-top: .4rem;
+    margin-bottom: .2rem;
     color: red;
-}
-
+  }
 /* text-form for sign-up */
 
 .sign-up {
