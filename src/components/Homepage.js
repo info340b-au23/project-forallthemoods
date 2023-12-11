@@ -25,12 +25,8 @@ export function HomePage() {
     <div>
       <main>
         <div className={`selector-container ${showModal ? 'modal-container' : ''}`}>
-          <button className="mood-button" onClick={handleShowModal}>
-            CHOOSE YOUR MOOD
-          </button>
-
           {showModal && (
-            <div className="modal">
+            <div className="modal-container">
               <span className="close material-icons" onClick={handleCloseModal}>
                 close
               </span>
@@ -53,19 +49,24 @@ export function HomePage() {
             </div>
           )}
         </div>
-          <a className="merch-button button-link" href="https://us.octobersveryown.com/" target="_blank" rel="noopener noreferrer">
-            MERCH
-          </a>
-          <button className="quiz-button">
-            <Link to="/quiz" className="button-link">
-              QUIZ
-            </Link>
-          </button>
-          <button className="review-button">
-            <Link to="/review" className="button-link">
-              REVIEW/RATE
-            </Link>
-          </button>
+        <div className='tester'>
+            <button className="mood-button" onClick={handleShowModal}>
+              CHOOSE YOUR MOOD
+            </button>
+            <a className="merch-button button-link" href="https://us.octobersveryown.com/" target="_blank" rel="noopener noreferrer">
+              MERCH
+            </a>
+            <button className="quiz-button">
+              <Link to="/quiz" className="button-link">
+                QUIZ
+              </Link>
+            </button>
+            <button className="review-button">
+              <Link to="/review" className="button-link">
+                REVIEW/RATE
+              </Link>
+            </button>
+          </div>
       </main>
     </div>
   );
