@@ -8,7 +8,7 @@ export function NostalgicPage () {
     <div className="nostalgic-background">
       <main className="mood-page">
         <button className="mood-button">
-          <Link to='/nostalgic' className="button-link">
+          <Link to='/Homepage' className="button-link">
             NOSTALGIC DRAKE
           </Link>
         </button>

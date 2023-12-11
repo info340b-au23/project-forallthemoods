@@ -7,7 +7,7 @@ export function HypedPage () {
     <div className="hyped-background">
       <main className="mood-page">
         <button className="mood-button">
-          <Link to='/hyped' className="button-link">
+          <Link to='/Homepage' className="button-link">
             HYPED DRAKE
           </Link>
         </button>

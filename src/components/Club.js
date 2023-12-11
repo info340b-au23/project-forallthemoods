@@ -7,7 +7,7 @@ export function ClubPage () {
     <div className="club-background">
       <main className="mood-page">
         <button className="mood-button">
-          <Link to='/club' className="button-link">
+          <Link to='/Homepage' className="button-link">
             HIT THE CLUB DRAKE
           </Link>
         </button>

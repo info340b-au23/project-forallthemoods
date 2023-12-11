@@ -7,7 +7,7 @@ export function HeartbreakPage () {
     <div className="heartbreak-background">
       <main className="mood-page">
         <button className="mood-button">
-          <Link to='/heartbreak' className="button-link">
+          <Link to='/Homepage' className="button-link">
             HEARTBREAK DRAKE
           </Link>
         </button>
