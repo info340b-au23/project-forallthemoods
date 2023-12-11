@@ -607,6 +607,11 @@ section.image-container span.right:hover {
     margin-right: 35px;
 }
 
+.modal-footer{
+    padding-left: 250px;
+    padding-bottom: 20px;
+}
+
 .button-container {
     text-align: center;
 }
