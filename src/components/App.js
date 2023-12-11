@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import './app.css';
+import '../app.css';
 import { HomePage } from './Homepage';
 import { ReviewPage } from './Review';
 import { SignUpPage } from './Signup';
@@ -13,7 +13,6 @@ import { HeartbreakPage } from './Heartbreak';
 import { ClubPage } from './Club';
 import { HypedPage } from './Hyped';
 import { CombinationPage } from './Combination';
-
 
 
 function App(props) {

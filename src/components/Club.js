@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import 'material-icons/iconfont/material-icons.css';
-import './app.css';
-
 
 export function ClubPage () {
   return (

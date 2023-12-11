@@ -1,20 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import 'material-icons/iconfont/material-icons.css';
-import './app.css';
 
-
-export function HeartbreakPage () {
+export function PartyPage () {
   return (
-    <div className="heartbreak-background">
+    <div className="party-background">
       <main className="mood-page">
         <button className="mood-button">
-          <Link to='/heartbreak' className="button-link">
-            HEARTBREAK DRAKE
+          <Link to='/party' className="button-link">
+            PARTY DRAKE
           </Link>
         </button>
-        <a className="spotify-button button-link" href="https://open.spotify.com/playlist/2lDwK6wAeyPCoPbdh9fFbU?si=131c115987da44c8" target="_blank" rel="noopener noreferrer">
-          HEARTBREAK PLAYLIST
+        <a className="spotify-button button-link" href="https://open.spotify.com/playlist/7AGbCCR3Kqy24uHyu6CMZB?si=32755969fa70412c" target="_blank" rel="noopener noreferrer">
+          PARTY PLAYLIST
         </a>
         <a className="merch-button button-link" href="https://us.octobersveryown.com/" target="_blank" rel="noopener noreferrer">
           MERCH
@@ -34,4 +32,4 @@ export function HeartbreakPage () {
   );
 };
 
-export default HeartbreakPage;
+export default PartyPage;
