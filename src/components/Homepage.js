@@ -31,9 +31,12 @@ export function HomePage() {
 
           {showModal && (
             <div className="modal">
+              <span className="close material-icons" onClick={handleCloseModal}>
+                close
+              </span>
               <h1 className="select-title">SELECT YOUR MOOD</h1>
               <p className="select-notice">SELECT YOUR MOOD AND LISTEN TO A PLAYLIST CURATED FOR YOUR MOOD.</p>
-              <Dropdown as={ButtonGroup} onSelect={handleMoodChange}>
+              <Dropdown as={ButtonGroup} onSelect={handleMoodChange} className="mx-auto">
                 <Dropdown.Toggle variant="primary" className="dropdown-basic">
                   SELECT
                 </Dropdown.Toggle>
@@ -50,20 +53,21 @@ export function HomePage() {
             </div>
           )}
         </div>
-
-        <a className="merch-button button-link" href="https://us.octobersveryown.com/" target="_blank" rel="noopener noreferrer">
-          MERCH
-        </a>
-        <button className="quiz-button">
-          <Link to="/quiz" className="button-link">
-            QUIZ
-          </Link>
-        </button>
-        <button className="review-button">
-          <Link to="/review" className="button-link">
-            REVIEW/RATE
-          </Link>
-        </button>
+        <div className='modal-container'>
+          <a className="merch-button button-link" href="https://us.octobersveryown.com/" target="_blank" rel="noopener noreferrer">
+            MERCH
+          </a>
+          <button className="quiz-button">
+            <Link to="/quiz" className="button-link">
+              QUIZ
+            </Link>
+          </button>
+          <button className="review-button">
+            <Link to="/review" className="button-link">
+              REVIEW/RATE
+            </Link>
+          </button>
+        </div>
       </main>
     </div>
   );
