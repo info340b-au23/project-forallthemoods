@@ -8,8 +8,8 @@ export function NaviBar() {
   };
     return (
       <div className="nav-container">
-        <header>FOR ALL THE MOODS</header>
-        <span className="profile material-icons" onClick={handleProfileClick}>account_circle</span>
+          <header>FOR ALL THE MOODS</header>
+          <span className="profile material-icons" onClick={handleProfileClick}>account_circle</span>
       <Navbar expand="lg" className="nav-container">
         <Container className='me-auto'>
           <Navbar.Collapse id="basic-navbar-nav">
