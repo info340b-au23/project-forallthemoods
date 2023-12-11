@@ -130,7 +130,7 @@ export function ReviewPage(prop) {
                 />
               </div>
               <Button className="submit-review" variant="primary" onClick={handleReviewSubmit}>
-                Submit
+                SUBMIT
               </Button>
               {errorMessage && (
                 <p className="error-message">
