@@ -558,19 +558,6 @@ section.image-container span.right:hover {
     margin-left: 17.5rem;
   }
 
-  
-/* tika's mood and mood example page individual styling */
-
-/* Default Styling */
-body, p, form, select{
-    margin: 0;
-    padding: 0;
-}
-
-p {
-    color: black;
-}
-
 /* mood background example change for eg_mood page */
 
 .nostalgic-background {
