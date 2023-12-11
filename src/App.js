@@ -11,6 +11,8 @@ import { PartyPage } from './Party';
 import { NostalgicPage } from './Nostalgic';
 import { HeartbreakPage } from './Heartbreak';
 import { ClubPage } from './Club';
+import { HypedPage } from './Hyped';
+import { CombinationPage } from './Combination';
 
 
 
@@ -26,6 +28,10 @@ function App(props) {
                     <Route path='/signup' element={<SignUpPage />} />
                     <Route path='/party' element={<PartyPage />} />
                     <Route path='/nostalgic' element={<NostalgicPage />} />
+                    <Route path='/heartbreak' element={<HeartbreakPage />} />
+                    <Route path='/club' element={<ClubPage />} />
+                    <Route path='/hyped' element={<HypedPage />} />
+                    <Route path='/combination' element={<CombinationPage />} />
                 </Routes>
             <Footer />
          </div>
