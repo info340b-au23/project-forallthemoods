@@ -128,7 +128,9 @@ export function ReviewPage(prop) {
                 Submit
               </button>
               {submissionMessage && (
-                <p className='submission-message'>{submissionMessage}</p>
+                <p className={`submission-message ${submissionMessage.trim() && 'error'}`}>
+                  {submissionMessage}
+                </p>
               )}
             </section>
           </div>

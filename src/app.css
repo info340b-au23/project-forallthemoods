@@ -160,6 +160,10 @@ p.submission-message {
     color: rgb(8, 123, 8);
 }
 
+.error{
+    color: red;
+}
+
 /* text-form for sign-up */
 
 .sign-up {
