@@ -22,10 +22,6 @@ header{
     padding: 1rem;
     padding-bottom: .5rem;
     text-decoration: none;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 2;
 }
 
 footer {
@@ -63,10 +59,6 @@ h1, h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    z-index: 100;
 }
 
 .nav-container ul {
@@ -89,7 +81,6 @@ h1, h2 {
     font-family: "Helvetica Neue";
     letter-spacing: .1em;
     padding: .5rem .2rem;
-    
 }
 
 /* overall container styling for review/rate, sign-in, and mood pages */
