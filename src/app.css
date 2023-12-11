@@ -61,18 +61,6 @@ h1, h2 {
     align-items: center;
 }
 
-.nav-container ul {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-container li {
-    display: inline-block;
-    margin-right: 10px;
-    padding-bottom: .5rem;
-}
-
 .nav-container a {
     text-decoration: none;
     color: white;
@@ -97,8 +85,8 @@ h1, h2 {
     box-shadow: 0 5px 15px rgba(0,0,0,0.16), 0 5px 15px rgba(0,0,0,0.23);
 }
 
-.modal-container {
-    z-index: 9999;
+.selector-container {
+    z-index: 2;
 }
 
 /* review and rate page inner containers styling */
@@ -125,7 +113,7 @@ h1, h2 {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
 }
 
-.review-inputfield{
+.review-inputfield {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -170,7 +158,7 @@ p.submission-message {
     color: rgb(8, 123, 8);
 }
 
-p.error-message{
+p.error-message {
     font-family:  "Helvetica Neue";
     font-size: 16px;
     font-weight: 450;
@@ -237,7 +225,7 @@ form input {
     font-family: "Helvetica Neue";
 }
 
-.dropdown{
+.dropdown {
     text-align: center;
     padding-bottom: 30px;
 }
@@ -279,7 +267,7 @@ form input {
     text-align: center; 
 }
 
-.selecter-options{
+.selecter-options {
     font-family: "Helvetica Neue";
     letter-spacing: .1em;
     display: block;
@@ -662,7 +650,7 @@ section.image-container span.right:hover {
     margin-right: 35px;
 }
 
-.modal-footer{
+.modal-footer {
     padding-left: 250px;
     padding-bottom: 10px;
 }
@@ -671,9 +659,10 @@ section.image-container span.right:hover {
     text-align: center;
 }
 
-.tester {
-    z-index: -1;
-}
+.modal-container {
+    display: block; 
+    z-index: 3;
+  }
 
 
 /* media queries */
