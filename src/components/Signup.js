@@ -42,12 +42,9 @@ export function SignUpPage() {
       return;
     }
   
-    // Assuming you have already initialized your Firebase app
-  
     const database = getDatabase();
     const usersRef = ref(database, 'users');
   
-    // Push user data to the 'users' node
     push(usersRef, {
       email: email,
       name: name,
@@ -55,16 +52,11 @@ export function SignUpPage() {
     })
       .then(() => {
         setIsSubmitted(true);
-        // Additional logic or state updates after successful submission
       })
       .catch((error) => {
         console.error("Error writing to Firebase Database", error);
       });
   };
-      // } else {
-      //     setErrors(validationErrors);
-      // }
-    // };
 
     return (
       <div>
