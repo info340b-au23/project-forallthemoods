@@ -593,7 +593,7 @@ section.image-container span.right:hover {
     border-radius: 8px;
   } 
 
-/* mood background example change for eg_mood page */
+/* mood background */
 
 .nostalgic-background {
 	background-image: url("../public/img/bgs/bg-nost.jpg");
@@ -835,7 +835,7 @@ section.image-container span.right:hover {
         padding: .5rem 1rem;
     }
     
-    /* mood background mobile example change for eg_mood page */
+    /* mood background mobile example */
     .nostalgic-background {
         background-image: url("../public/img/bgs/bg_nost_mobile.jpg");
         background-size: cover;
