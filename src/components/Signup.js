@@ -1,32 +1,29 @@
 import React, { useState } from 'react';
-
+import { getDatabase, ref, push } from 'firebase/database';
 
 export function SignUpPage() {
-
-  let [email, setEmail] = useState('');
-  let [name, setName] = useState('');
-  let [password, setPassword] = useState('');
-  let [errors, setErrors] = useState({});
+  const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+  const [password, setPassword] = useState('');
+  const [errors, setErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-
-  let EmailChange = (e) => {
+  const EmailChange = (e) => {
     setEmail(e.target.value);
   };
 
-  let NameChange = (e) => {
+  const NameChange = (e) => {
     setName(e.target.value);
   };
 
-  let PasswordChange = (e) => {
+  const PasswordChange = (e) => {
     setPassword(e.target.value);
   };
 
-
-  let Submit = (e) => {
+  const Submit = async (e) => {
     e.preventDefault();
   
-    let validationErrors = {};
+    const validationErrors = {};
   
     if (!email) {
       validationErrors.email = 'Email is required';
@@ -44,14 +41,30 @@ export function SignUpPage() {
       setErrors(validationErrors);
       return;
     }
-    
-    setIsSubmitted(true);
-
-    setEmail('');
-    setName('');
-    setPassword('');
-    setErrors({});
+  
+    // Assuming you have already initialized your Firebase app
+  
+    const database = getDatabase();
+    const usersRef = ref(database, 'users');
+  
+    // Push user data to the 'users' node
+    push(usersRef, {
+      email: email,
+      name: name,
+      password: password,
+    })
+      .then(() => {
+        setIsSubmitted(true);
+        // Additional logic or state updates after successful submission
+      })
+      .catch((error) => {
+        console.error("Error writing to Firebase Database", error);
+      });
   };
+      // } else {
+      //     setErrors(validationErrors);
+      // }
+    // };
 
     return (
       <div>
