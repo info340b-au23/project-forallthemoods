@@ -726,7 +726,7 @@ section.image-container span.right:hover {
         outline: none;
         position: absolute;
         left: 45px;
-        top: 282px;
+        top: 287px;
     }
 
     .merch-button {
@@ -744,8 +744,8 @@ section.image-container span.right:hover {
         border-radius: 16px;
         outline: none;
         position: absolute;
-        left: 43px;
-        top: 390px;
+        left: 58px;
+        top: 425px;
     }
     
     .quiz-button {
@@ -763,8 +763,8 @@ section.image-container span.right:hover {
         border-radius: 16px;
         outline: none;
         position: absolute;
-        left: 305px;
-        top: 385px;
+        left: 335px;
+        top: 423px;
     }
 
     .review-button {
@@ -934,6 +934,11 @@ section.image-container span.right:hover {
         padding-top: .5rem;
         padding-bottom: 1rem;
         text-align: center; 
+    }
+
+    .dropdown-basic {
+        padding-left: .1rem;
+        padding-right: .1rem;
     }
 
     /* user input field for review adjustments */
