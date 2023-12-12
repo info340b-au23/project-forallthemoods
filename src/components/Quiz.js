@@ -67,7 +67,7 @@ export function QuizPage() {
     'Weston Road Flows',
   ];
 
-  const champaignepapiDrakeSongs = [
+  const champagnepapiDrakeSongs = [
     'Started From The Bottom',
     'IDGAF',
     'Rich Flex',
@@ -82,7 +82,7 @@ export function QuizPage() {
     { name: 'T-Time Drake', songs: ttimeDrakeSongs },
     { name: 'Heartbroken Drake', songs: heartbrokenDrakeSongs },
     { name: 'Old-Head Drake', songs: oldheadDrakeSongs },
-    { name: 'Champaigne Papi Drake', songs: champaignepapiDrakeSongs },
+    { name: 'Champagne Papi Drake', songs: champagnepapiDrakeSongs },
   ];
 
   const calculateScore = (selectedSongs, playlist) => {
@@ -232,8 +232,8 @@ export function QuizPage() {
     } else if (playlistResult === 'Old-Head Drake') {
       resultImage = '/img/drake_results/Old-Head-Drake.jpeg';
       playlistDescription = 'You probably say the phrases “Drake sings too much” or “I miss the old Drake” way too often. You\'re either 35+ years old or 20 and simply love his old music for nostalgia. You have an old soul and simply love the classics.';
-    } else if (playlistResult === 'Champaigne Papi Drake') {
-      resultImage = '/img/drake_results/Champaigne-Papi-Drake.jpeg';
+    } else if (playlistResult === 'Champagne Papi Drake') {
+      resultImage = '/img/drake_results/Champagne-Papi-Drake.jpeg';
       playlistDescription = 'You definitely call Drake “The Boy” and love his radio hits. You\'re a confident but probably emotional person. You will ride for Drake no matter what song he makes and you might only bump him in the car.';
     }
 

@@ -171,6 +171,7 @@ p.error-message {
     margin-bottom: .2rem;
     color: red;
   }
+
 /* text-form for sign-up */
 
 .sign-up {
@@ -199,6 +200,8 @@ p.error-message {
     letter-spacing: .1em;
     margin: 0 .2rem;
     padding-bottom: .5rem;
+    padding-top: .5rem;
+    color: green;
 }
 
 form input {
@@ -279,17 +282,6 @@ form input {
 
 select {
     padding: 5px;
-}
-
-span.close.material-icons {
-    margin-top: 1rem;
-    padding-left: 38rem;
-}
-
-span.close.material-icons:hover {
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-
 }
 
 /* sign-in and mood page headers */
@@ -398,6 +390,10 @@ section.image-container span.right:hover {
     line-height: 1.5; 
 }
 
+.submit-quiz-button, .redo-quiz-button {
+    margin-bottom: .4rem;
+}
+
 /* home and mood page button styling */
 
 .mood-button .button-link, 
@@ -412,7 +408,7 @@ section.image-container span.right:hover {
     letter-spacing: normal;
 }
 
-.mood-button, .heart-button {
+.mood-button, .heart-button{
     font-family: "Helvetica Neue";
     font-weight: bold;
     font-size: 20px;
@@ -507,7 +503,8 @@ section.image-container span.right:hover {
     top: 350px;
 }
 
-.quiz-button:hover, .review-button:hover, .merch-button:hover, .mood-button:hover, .spotify-button:hover{
+.quiz-button:hover, .review-button:hover, .merch-button:hover, 
+.mood-button:hover, .spotify-button:hover{
     background-color: #000;
     color: #FFF;
 }
@@ -578,7 +575,12 @@ section.image-container span.right:hover {
     font-family: "Helvetica Neue";
     text-shadow: 0.5px 0.5px grey;
     font-size: 18px;
-  }
+}
+
+.result-description {
+    padding-top: .2rem;
+    padding-bottom: .1rem;
+}
 
 .result-image {
     display: block;
@@ -629,28 +631,6 @@ section.image-container span.right:hover {
     height: 100vh;
 }
 
-.submit-button, .close-button {
-    display: inline-block;
-    background-color: rgb(211, 208, 208); 
-    color: black; 
-    font-size: 12px; 
-    font-family: "Helvetica Neue";
-    padding: 3px 10px; 
-    border-radius: 5px; 
-    margin: 0 auto; 
-    text-align: center;
-    line-height: 1.5;
-    margin-bottom: 10px;
-}
-
-.submit-button {
-    margin-right: 10px;
-}
-
-.close-button {
-    margin-right: 35px;
-}
-
 .modal-footer {
     padding-left: 250px;
     padding-bottom: 10px;
@@ -693,7 +673,7 @@ section.image-container span.right:hover {
     }
 
     header {
-        position: fixed;
+        position: relative;
         top: 0;
         font-size: 25px;
         width: 70%;
@@ -746,7 +726,7 @@ section.image-container span.right:hover {
         outline: none;
         position: absolute;
         left: 45px;
-        top: 260px;
+        top: 282px;
     }
 
     .merch-button {
@@ -802,27 +782,8 @@ section.image-container span.right:hover {
         border-radius: 16px;
         outline: none;
         position: absolute;
-        left: 170px;
-        top: 326px;
-    }
-
-    .modal_button {
-        font-family: "Helvetica Neue";
-        font-weight: bold;
-        font-size: 8px;
-        background-color: #FAF9F6;
-        border: 2.5px solid black;
-        color: black;
-        padding: 5px 10px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        cursor: pointer;
-        border-radius: 16px;
-        outline: none;
-        position: absolute;
-        left: 170px;
-        top: 326px;
+        left: 185px;
+        top: 410px;
     }
 
     .spotify-button {
@@ -841,7 +802,7 @@ section.image-container span.right:hover {
         outline: none;
         position: absolute;
         left: 89px;
-        top: 355px;
+        top: 345px;
     }
 
     .mood-button .button-link, 
@@ -951,13 +912,7 @@ section.image-container span.right:hover {
     }
 
     .confirmation-message {
-        font-family: "Helvetica Neue";
-        font-weight: 300;
-        text-align: center;
         font-size: 13px;
-        letter-spacing: .1em;
-        margin: 0 .2rem;
-        padding-bottom: .5rem;
     }
 
     /* review and rate page inner containers adjustments */
@@ -988,6 +943,14 @@ section.image-container span.right:hover {
         border: 1px solid white;
         border-radius: 10px;
         max-width: 100%;
+    }
+
+    .submit-review {
+        padding: 3px 3.8px; 
+        margin: 0 auto; 
+        text-align: center;
+        line-height: 1.5; 
+        font-size: 13px;
     }
 
     /* quiz page mobile adjusments */
