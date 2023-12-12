@@ -940,7 +940,7 @@ section.image-container span.right:hover {
         padding-left: .1rem;
         padding-right: .1rem;
     }
-
+    
     /* user input field for review adjustments */
     textarea#review-text.form-control {
         resize: none; 
