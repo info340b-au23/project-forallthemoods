@@ -205,7 +205,7 @@ export function QuizPage() {
   
         {isLastPage && !submitted ? (
           <button className="submit-quiz-button" onClick={handleSubmit} disabled={userSelections.includes(null)}>
-            Submit
+            SUBMIT
           </button>
         ) : (
           submitted && !showResult ? (
@@ -248,7 +248,7 @@ export function QuizPage() {
         <h2 className="playlist-result">{playlistResult}</h2>
         <p className="result-description">{playlistDescription}</p>
         <button className="redo-quiz-button" onClick={handleResetQuiz}>
-          Redo Quiz
+          REDO QUIZ
         </button>
       </div>
     );
