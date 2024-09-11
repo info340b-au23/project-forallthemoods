@@ -1,5 +1,7 @@
 # INFO 340 Project
 
+Our published site can be viewed here: [For All the Moods](https://forallthemoods-7a39a.web.app/)
+
 This repository contains code for an interactive Drake promotional web app, created for the _Client-Side Web Development_ course at the UW iSchool. 
 
 For All the Moods, is a promotional Drake website for fans and any users interested in the musical artist: Drake. Our page highlights interactive features for fans and users; discover new music from mood-playlists curated through our mood selector, leave album reviews/ratings, take a quiz to see what Drake persona you are, discover OVO merchandise, and sign-up for our page to save your progress. 
